@@ -1,0 +1,13 @@
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/bin/Debug/net8.0/SharedMessages.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/bin/Debug/net8.0/SharedMessages.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/bin/Debug/net8.0/SharedMessages.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.csproj.AssemblyReference.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.GeneratedMSBuildEditorConfig.editorconfig
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.AssemblyInfoInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.AssemblyInfo.cs
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.csproj.CoreCompileInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.sourcelink.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/refint/SharedMessages.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/SharedMessages.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/obj/Debug/net8.0/ref/SharedMessages.dll

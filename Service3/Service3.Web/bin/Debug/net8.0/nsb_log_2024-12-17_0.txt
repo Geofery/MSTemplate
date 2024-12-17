@@ -1,0 +1,30 @@
+﻿2024-12-17 11.41.07.799 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 11.44.37.012 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 11.45.49.420 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 11.45.54.737 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 11.52.38.578 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 11.56.57.773 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.03.30.488 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.03.30.669 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.03.33.013 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.03.33.185 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.07.02.555 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.07.02.750 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.07.07.752 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.07.07.931 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.10.59.791 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.10.59.995 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.11.01.801 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.11.01.985 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.14.34.968 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.14.35.213 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.14.37.774 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.14.37.979 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.19.58.180 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.19.58.362 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.20.03.239 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.20.03.411 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.20.56.793 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.20.56.949 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.
+2024-12-17 12.21.02.939 INFO  Logging to '/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/' with level Info
+2024-12-17 12.21.03.128 INFO  No valid license could be found. Falling back to trial license with start date '2024-12-17'.

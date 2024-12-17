@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jn3dfwQCGBzhbwAjSfbziceNQmtz3l3gH8zeByBaraE=",
+  "Source": "Service3.Web",
+  "BasePath": "_content/Service3.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

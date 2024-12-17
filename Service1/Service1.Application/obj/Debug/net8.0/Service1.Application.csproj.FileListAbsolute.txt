@@ -1,0 +1,12 @@
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Service1.Application.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Service1.Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Service1.Application.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.AssemblyInfoInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.AssemblyInfo.cs
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.csproj.CoreCompileInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.sourcelink.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/refint/Service1.Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Service1.Application.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/ref/Service1.Application.dll
