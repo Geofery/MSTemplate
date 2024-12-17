@@ -22,7 +22,7 @@ echo "Starting Service3..."
 open_new_terminal "cd $(pwd)/Service3/Service3.Web && dotnet run --urls http://localhost:5003"
 
 # Wait briefly to ensure services are up
-sleep 5
+sleep 6
 
 # Open Swagger UI in Safari for Service1
 echo "Opening Swagger UI for Service1 in Safari..."

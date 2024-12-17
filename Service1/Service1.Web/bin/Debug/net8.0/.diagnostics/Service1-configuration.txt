@@ -1784,7 +1784,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 54300672,
+    "WorkingSet": 54329344,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
