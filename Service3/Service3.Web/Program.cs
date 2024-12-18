@@ -1,26 +1,25 @@
 using Microsoft.OpenApi.Models;
-using NServiceBus;
-using NServiceBus.Newtonsoft.Json;
+using SharedMessages;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// NServiceBus Endpoint Configuration
-var endpointConfiguration = new EndpointConfiguration("Service3");
+// Register NServiceBusService and IMessageSession
+// Register NServiceBusService and IMessageSession
+builder.Services.AddSingleton<NServiceBusService>(provider =>
+    new NServiceBusService("Service3")); // Replace "Service1" with your endpoint name
+builder.Services.AddSingleton<IMessageSession>(provider =>
+{
+    var nServiceBusService = provider.GetRequiredService<NServiceBusService>();
+    return nServiceBusService.MessageSession;
+});
+builder.Services.AddHostedService(provider => provider.GetRequiredService<NServiceBusService>());
 
-// Configure the Serializer
-endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
-
-// Use the Learning Transport for local testing
-var transport = endpointConfiguration.UseTransport<LearningTransport>();
-transport.StorageDirectory("../Build/NServiceBusTransport");
-
-// Start the NServiceBus endpoint
-var endpointInstance = await NServiceBus.Endpoint.Start(endpointConfiguration);
-builder.Services.AddSingleton(endpointInstance);
 
 builder.WebHost.UseUrls("http://localhost:5003");
 
+
 // Add services to the container
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -36,6 +35,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Service3 API v1"));
 }
 
+app.UseRouting();
+app.MapControllers();
 app.MapGet("/", () => "Service3 is running!");
-
 app.Run();

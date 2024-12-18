@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0UyRCsH3D/o=",
+  "dgSpecHash": "1s6iD4RLOIa/QAk6a+ksMIkDyC0Kjf8JCCkNzcvttukBVOdeMrrDDWmt7ilWuJBw/fmnkDh+P8wl1H9oQDbyzA==",
   "success": true,
-  "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj",
+  "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

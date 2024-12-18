@@ -1,0 +1,58 @@
+﻿<Properties StartupConfiguration="{9BB9F80E-A3DA-480F-AB34-C9E32F01312A}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <Breakpoint file="/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/MessageController.cs" relfile="Service1/Service1.Web/MessageController.cs" line="23" column="1" />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service1/Service1.Web/MessageController.cs">
+    <Files>
+      <File FileName="Service1/Service1.Web/Program.cs" Line="21" Column="31" />
+      <File FileName="Service2/Service2.Web/Program.cs" Line="39" Column="11" />
+      <File FileName="Service3/Service3.Web/Program.cs" Line="32" Column="37" />
+      <File FileName="Service3/Service3.Web/appsettings.json" />
+      <File FileName="Service2/Service2.Web/appsettings.json" />
+      <File FileName="Service1/Service1.Web/appsettings.json" />
+      <File FileName="Service3/Service3.Web/Controller.cs" />
+      <File FileName="Service2/Service2.Web/Controller.cs" Line="12" Column="61" />
+      <File FileName="Service2/Service2.Web/Handlers/MessageHandler.cs" Line="14" Column="14" />
+      <File FileName="Service3/Service3.Web/Handlers/MessageHandler.cs" />
+      <File FileName="Shared/NServiceBusShared/SharedMessages/NServiceBusService.cs" Line="47" Column="1" />
+      <File FileName="Service1/Service1.Web/MessageController.cs" Line="43" Column="85" />
+      <File FileName="Shared/NServiceBusShared/SharedMessages/ServiceMessages.cs" Line="3" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MSTemplate" expanded="True">
+            <Node name="Service1" expanded="True">
+              <Node name="Service1.Web">
+                <Node name="MessageController.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Service2" expanded="True">
+              <Node name="Service2.Web">
+                <Node name="Handlers" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Service3" expanded="True" />
+            <Node name="Shared">
+              <Node name="NServiceBusShared">
+                <Node name="SharedMessages">
+                  <Node name="Dependencies" expanded="True">
+                    <Node name="PackageDependencies" expanded="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Service2.Service2.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.UserManagement.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

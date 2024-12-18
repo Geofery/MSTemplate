@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FzrO7ZEUwAc=",
+  "dgSpecHash": "W7AGFf2KWoaGzzSOGdSOvgEckROicfwU6BM53QIP1uEJivD31Jng6Eliff7MFnZU7OIadN7TXLSL/oWxTriHTA==",
   "success": true,
-  "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj",
+  "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/roed/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

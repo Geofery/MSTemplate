@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj",
-      "projectName": "Service1.Application",
-      "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj",
+      "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Application.csproj",
+      "projectName": "Application",
+      "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Application.csproj",
       "packagesPath": "/Users/roed/.nuget/packages/",
       "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/",
       "projectStyle": "PackageReference",
@@ -38,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {

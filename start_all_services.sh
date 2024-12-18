@@ -4,7 +4,7 @@
 open_new_terminal() {
   osascript <<EOF
 tell application "Terminal"
-    do script "$1"
+    do script "$1; exit"
 end tell
 EOF
 }

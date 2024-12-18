@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "se1mp3o8S2PY7d6C/c6TFWHiKl85+L6/vo4u/3jRyiQ=",
-  "Source": "Service1.Web",
-  "BasePath": "_content/Service1.Web",
+  "Hash": "I45YKMxdLd4rSIfiy4Jy7K87CK1wxLboE3ngw90NHmQ=",
+  "Source": "Web",
+  "BasePath": "_content/Web",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

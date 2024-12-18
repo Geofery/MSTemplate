@@ -4738,9 +4738,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj",
-      "projectName": "Service1.Infrastructure",
-      "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj",
+      "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Infrastructure.csproj",
+      "projectName": "Infrastructure",
+      "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/roed/.nuget/packages/",
       "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/",
       "projectStyle": "PackageReference",
@@ -4763,11 +4763,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
