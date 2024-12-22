@@ -22,7 +22,7 @@ builder.Host.UseNServiceBus(context =>
 {
     var endpointConfiguration = new EndpointConfiguration("UserManagement");
     var transport = endpointConfiguration.UseTransport<LearningTransport>();
-    transport.StorageDirectory("../Build/NServiceBusTransport/UserManagement");
+    transport.StorageDirectory("../Build/NServiceBusTransport");
 
     endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
     endpointConfiguration.SendFailedMessagesTo("error");

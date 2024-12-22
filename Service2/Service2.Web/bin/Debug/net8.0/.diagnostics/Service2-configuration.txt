@@ -10,6 +10,10 @@
         "FileVersion": "1.0.0"
       },
       {
+        "FullName": "NServiceBus.Extensions.Hosting, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
+        "FileVersion": "3.0.0"
+      },
+      {
         "FullName": "SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "FileVersion": "1.0.0"
       },
@@ -29,7 +33,23 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Runtime.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -41,7 +61,23 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -57,6 +93,18 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Convention.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Hosting.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Newtonsoft.Json.dll",
         "SkipReason": "File was explicitly excluded from scanning."
       },
@@ -69,7 +117,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.TypedParts.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.AttributedModel.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.CodeDom.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -134,10 +206,6 @@
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Private.Xml.Linq.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Private.DataContractSerialization.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -237,14 +305,6 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.ComponentModel.EventBasedAsync.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Collections.Specialized.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Collections.NonGeneric.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -313,10 +373,6 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.ServiceModel.Web.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Security.SecureString.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -377,11 +433,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Hosting.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Extensions.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Handles.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -389,55 +441,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.IISIntegration.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Resources.ResourceManager.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.ThreadPool.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Resources.Reader.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.TypeExtensions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Authentication.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Linq.Queryable.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Net.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Numerics.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -461,11 +469,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.Abstractions.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Numerics.Vectors.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Numerics.Vectors.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -481,11 +489,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.Emit.Lightweight.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Intrinsics.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Intrinsics.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.Emit.Lightweight.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -577,27 +585,19 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Core.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Text.Encoding.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Common.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Resources.ResourceManager.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.IISIntegration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -621,7 +621,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -637,11 +637,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Rewrite.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.ResponseCompression.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Rewrite.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -701,6 +701,18 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Linq.Queryable.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Net.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.DataAnnotations.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Razor.Runtime.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -710,30 +722,6 @@
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.Cors.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.CookiePolicy.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.WebSockets.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Localization.Routing.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Session.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Serialization.Json.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -749,6 +737,18 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Results.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.HttpsPolicy.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Xml.XPath.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -757,59 +757,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.HttpsPolicy.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Results.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Newtonsoft.Json.dll",
-        "SkipReason": "File was explicitly excluded from scanning."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Debug.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Metadata.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Identity.Core.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Configuration.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.IO.FileSystem.AccessControl.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Html.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Components.Forms.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.Debug.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.HttpLogging.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -817,19 +765,27 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.DataProtection.Abstractions.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.HttpLogging.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.StaticFiles.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Diagnostics.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Cors.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.Process.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.Razor.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Connections.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -845,15 +801,103 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Connections.Common.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Extensions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.TypeExtensions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Authentication.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Numerics.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Extensions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Hosting.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Identity.Core.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Diagnostics.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Serialization.Json.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Session.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Cors.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.WebSockets.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Localization.Routing.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.CookiePolicy.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -885,6 +929,14 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.Debug.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Components.Forms.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Net.WebHeaderCollection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -909,43 +961,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.Process.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.Razor.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.Connections.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Handles.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Runtime.Numerics.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Authentication.OAuth.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.TraceSource.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Authentication.OAuth.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -990,6 +1010,10 @@
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/System.IO.Pipelines.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.CodeDom.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1041,27 +1065,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Windows.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.IO.FileSystem.Primitives.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.WebUtilities.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.DataProtection.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/System.Diagnostics.EventLog.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1073,39 +1077,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.EventSource.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.RazorPages.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.FileVersionInfo.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Newtonsoft.Json.dll",
+        "SkipReason": "File was explicitly excluded from scanning."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Debug.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/Microsoft.Win32.Registry.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Metadata.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Http.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.IO.FileSystem.AccessControl.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.DispatchProxy.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Html.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.EventLog.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Caching.Memory.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Localization.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Configuration.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1125,15 +1121,43 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Json.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.DispatchProxy.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Console.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.EventLog.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Diagnostics.FileVersionInfo.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/Microsoft.Win32.Registry.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Http.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Web.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.DataProtection.Extensions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Data.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1141,15 +1165,31 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.Timer.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Xml.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.UserSecrets.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.ResponseCompression.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Private.DataContractSerialization.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1158,6 +1198,14 @@
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.ComponentModel.EventBasedAsync.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.TypedParts.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1177,31 +1225,47 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Components.Endpoints.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Dynamic.Runtime.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Drawing.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Components.Endpoints.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Binder.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Http.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Localization.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.StaticFiles.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Caching.Memory.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.RazorPages.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Collections.Specialized.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Runtime.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.AttributedModel.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.Console.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Json.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1229,31 +1293,11 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Net.Security.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.Primitives.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.Timer.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.FileProviders.Physical.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Web.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.DataProtection.Extensions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Data.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1265,7 +1309,23 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Numerics.dll",
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Threading.ThreadPool.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Resources.Reader.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1274,18 +1334,6 @@
       },
       {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.UserSecrets.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1309,6 +1357,94 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Hosting.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Logging.EventSource.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Windows.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.IO.FileSystem.Primitives.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.WebUtilities.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/System.Composition.Convention.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Xml.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.TagHelpers.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/System.Diagnostics.EventLog.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Drawing.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Binder.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.Mvc.ApiExplorer.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Text.Encoding.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Common.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.ServiceModel.Web.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.AspNetCore.SignalR.Core.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Net.Security.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Reflection.Primitives.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/8.0.7/System.Private.CoreLib.dll",
         "SkipReason": "File is a .NET runtime assembly."
       }
@@ -1326,7 +1462,7 @@
     "AuditTTBR": "-"
   },
   "Container": {
-    "Type": "internal"
+    "Type": "external"
   },
   "Endpoint": {
     "Name": "Service2",
@@ -1826,7 +1962,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 97669120,
+    "WorkingSet": 54747136,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
@@ -1850,10 +1986,12 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 2,
+    "NumberOfMessagesFoundAtStartup": 4,
     "Messages": [
-      "SharedMessages.MessageFromService1",
-      "SharedMessages.MessageFromService2"
+      "SharedMessages.SignupCompleted",
+      "SharedMessages.UserCreated",
+      "SharedMessages.MessageFromService2",
+      "SharedMessages.MessageFromService1"
     ]
   },
   "Receiving": {
@@ -1873,8 +2011,8 @@
       
     ],
     "MessageHandlers": {
-      "SharedMessages.MessageFromService1": [
-        "Service2.Web.Handlers.MessageHandler"
+      "SharedMessages.SignupCompleted": [
+        "Web.Handlers.MessageHandler"
       ]
     }
   },

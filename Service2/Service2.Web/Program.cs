@@ -1,22 +1,30 @@
 using Microsoft.OpenApi.Models;
+using Web;
 using SharedMessages;
+using Microsoft.EntityFrameworkCore;
+using Web.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register NServiceBusService and IMessageSession
-builder.Services.AddSingleton<NServiceBusService>(provider =>
-    new NServiceBusService("Service2"));
-builder.Services.AddSingleton<IMessageSession>(provider =>
+builder.Host.UseNServiceBus(context =>
 {
-    var nServiceBusService = provider.GetRequiredService<NServiceBusService>();
-    return nServiceBusService.MessageSession;
+    var endpointConfiguration = new EndpointConfiguration("Service2");
+    var transport = endpointConfiguration.UseTransport<LearningTransport>();
+    transport.StorageDirectory("../../Service1/Build/NServiceBusTransport");
+
+    endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
+    endpointConfiguration.SendFailedMessagesTo("error");
+    endpointConfiguration.AuditProcessedMessagesTo("audit");
+
+    return endpointConfiguration;
 });
-builder.Services.AddHostedService(provider => provider.GetRequiredService<NServiceBusService>());
 
 builder.WebHost.UseUrls("http://localhost:5002");
 
 
 // Add services to the container
+builder.Services.AddTransient<MessageHandler>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

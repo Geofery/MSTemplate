@@ -18,8 +18,8 @@
         "FileVersion": "1.0.0"
       },
       {
-        "FullName": "NServiceBus.Extensions.Hosting, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
-        "FileVersion": "2.0.0"
+        "FullName": "NServiceBus.Extensions.Hosting, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
+        "FileVersion": "3.0.0"
       },
       {
         "FullName": "NServiceBus.Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
@@ -1966,7 +1966,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 96755712,
+    "WorkingSet": 96960512,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
@@ -1990,13 +1990,14 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 5,
+    "NumberOfMessagesFoundAtStartup": 6,
     "Messages": [
       "SharedMessages.MessageFromService2",
-      "SharedMessages.MessageFromService1",
-      "Application.Commands.SignupCommand",
+      "SharedMessages.SignupCompleted",
       "SharedMessages.UserCreated",
-      "Application.Events.SignupCompleted"
+      "Application.Commands.SignupCommand",
+      "Application.Events.SignupCompleted",
+      "SharedMessages.MessageFromService1"
     ]
   },
   "Receiving": {

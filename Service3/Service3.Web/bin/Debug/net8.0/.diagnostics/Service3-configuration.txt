@@ -45,6 +45,10 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -621,7 +625,7 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.DependencyInjection.dll",
+        "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1321,6 +1325,10 @@
       "AdditionalAssemblyScanningPath": null
     }
   },
+  "Audit": {
+    "AuditQueue": "audit",
+    "AuditTTBR": "-"
+  },
   "Container": {
     "Type": "internal"
   },
@@ -1414,18 +1422,20 @@
     {
       "Name": "NServiceBus.Features.Audit",
       "EnabledByDefault": true,
-      "Active": false,
+      "Active": true,
       "PrerequisiteStatus": {
-        "IsSatisfied": false,
+        "IsSatisfied": true,
         "Reasons": [
-          "No configured audit queue was found"
+          
         ]
       },
       "Dependencies": [
         
       ],
       "Version": "9.2.3",
-      "StartupTasks": null,
+      "StartupTasks": [
+        
+      ],
       "DependenciesAreMet": true
     },
     {
@@ -1820,7 +1830,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 65372160,
+    "WorkingSet": 65294336,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
@@ -1844,10 +1854,11 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 2,
+    "NumberOfMessagesFoundAtStartup": 3,
     "Messages": [
       "SharedMessages.MessageFromService1",
-      "SharedMessages.MessageFromService2"
+      "SharedMessages.MessageFromService2",
+      "SharedMessages.UserCreated"
     ]
   },
   "Receiving": {

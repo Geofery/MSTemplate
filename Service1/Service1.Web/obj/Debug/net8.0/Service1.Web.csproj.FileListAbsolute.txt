@@ -31,6 +31,7 @@
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/MySqlConnector.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/Newtonsoft.Json.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/NServiceBus.Core.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/NServiceBus.Extensions.Hosting.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/NServiceBus.MessageInterfaces.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/NServiceBus.Newtonsoft.Json.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/Pomelo.EntityFrameworkCore.MySql.dll
@@ -128,4 +129,3 @@
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/obj/Debug/net8.0/Service1.Web.pdb
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/obj/Debug/net8.0/Service1.Web.genruntimeconfig.cache
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/obj/Debug/net8.0/ref/Service1.Web.dll
-/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/NServiceBus.Extensions.Hosting.dll

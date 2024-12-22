@@ -7,6 +7,7 @@
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Service3.Web.pdb
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Web/bin/Debug/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll

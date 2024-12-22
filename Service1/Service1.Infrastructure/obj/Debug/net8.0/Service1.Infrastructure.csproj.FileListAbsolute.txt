@@ -1,4 +1,5 @@
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Infrastructure.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Infrastructure.runtimeconfig.json
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Infrastructure.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Infrastructure.pdb
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Domain.dll
@@ -13,6 +14,5 @@
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/Service1.Infrastructure.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/refint/Service1.Infrastructure.dll
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/Service1.Infrastructure.pdb
-/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/ref/Service1.Infrastructure.dll
-/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/bin/Debug/net8.0/Service1.Infrastructure.runtimeconfig.json
 /Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/Service1.Infrastructure.genruntimeconfig.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/Debug/net8.0/ref/Service1.Infrastructure.dll

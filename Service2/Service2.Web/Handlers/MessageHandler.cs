@@ -2,13 +2,13 @@
 using SharedMessages;
 using System.Threading.Tasks;
 
-namespace Service2.Web.Handlers
+namespace Web.Handlers
 {
-    public class MessageHandler : IHandleMessages<MessageFromService1>
+    public class MessageHandler : IHandleMessages<SignupCompleted>
     {
-        public async Task Handle(MessageFromService1 message, IMessageHandlerContext context)
+        public async Task Handle(SignupCompleted message, IMessageHandlerContext context)
         {
-            Console.WriteLine($"Service2 received message: {message.Content}");
+            Console.WriteLine($"Service2 received message: {message.Name}");
 
             var messageToService3 = new MessageFromService2
             {
