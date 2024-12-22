@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eQ0oH54czKMrUUgKYINhs3rd6qP5PKRcTj9AHC1adOjMZTIAjYGAN2f4bQcweyeyOq1UTLySSuCYD7nZUYO2iw==",
+  "dgSpecHash": "cuXNjctJX0MDJf4g55xBD1/c9bvdacVIVMW/Qts6Zd3w0j+ayepKEwuHf4sCOB3MfI+i3EgiMoJoxe/hpCAgug==",
   "success": true,
   "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/Service2.Web.csproj",
   "expectedPackageFiles": [
@@ -9,7 +9,7 @@
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
-    "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.diagnostics/8.0.0/microsoft.extensions.diagnostics.8.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.diagnostics.abstractions/9.0.0/microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512",

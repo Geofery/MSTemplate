@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
-using SharedMessages;
+using Application.Commands;
 
-namespace Service1.Web
+namespace Web
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -10,6 +10,7 @@ namespace Service1.Web
     {
         private readonly IMessageSession _messageSession;
         private readonly ILogger<UserController> _logger;
+
 
         public UserController(IMessageSession messageSession, ILogger<UserController> logger)
         {
@@ -19,7 +20,7 @@ namespace Service1.Web
 
         [HttpPost("Signup", Name = "Signup")]
         [SwaggerResponse(StatusCodes.Status201Created, "Signup process for new member started")]
-        public async Task<IActionResult> Signup([FromBody] SignupDTO model)
+        public async Task<IActionResult> SignupMember([FromBody] SignupDTO model)
         {
             try
             {
@@ -31,8 +32,15 @@ namespace Service1.Web
                 _logger.LogInformation("Signup endpoint hit in UserController.");
                 _logger.LogInformation($"THIS IS MY MESSAGE {model}");
 
-                await _messageSession.SendLocal(model).ConfigureAwait(false);
-                _logger.LogInformation($"MessageFromService1 successfully send: {model}");
+                var command = new SignupCommand
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Password = model.Password
+                };
+
+                await _messageSession.SendLocal(command).ConfigureAwait(false);
+                _logger.LogInformation($"MessageFromService1 successfully send: {command}");
 
                 return Accepted();
             }

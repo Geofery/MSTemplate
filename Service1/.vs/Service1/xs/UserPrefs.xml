@@ -4,12 +4,25 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Service1.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service1.Domain/Repositories/IUserRepository.cs">
+    <Files>
+      <File FileName="Service1.Web/UserController.cs" Line="1" Column="1" />
+      <File FileName="Service1.Web/SignupHandler.cs" Line="1" Column="1" />
+      <File FileName="Service1.Domain/Service1.Domain.csproj" Line="12" Column="15" />
+      <File FileName="Service1.Domain/Repositories/IUserRepository.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Service1" expanded="True" selected="True" />
+          <Node name="Service1" expanded="True" selected="True">
+            <Node name="Service1.Domain">
+              <Node name="Repositories" expanded="True" />
+            </Node>
+          </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

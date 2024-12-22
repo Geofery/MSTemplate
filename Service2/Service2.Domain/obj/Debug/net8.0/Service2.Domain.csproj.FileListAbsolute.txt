@@ -1,0 +1,12 @@
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/bin/Debug/net8.0/Service2.Domain.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/bin/Debug/net8.0/Service2.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/bin/Debug/net8.0/Service2.Domain.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.AssemblyInfoInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.AssemblyInfo.cs
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.csproj.CoreCompileInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.sourcelink.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/refint/Service2.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/Service2.Domain.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/Debug/net8.0/ref/Service2.Domain.dll

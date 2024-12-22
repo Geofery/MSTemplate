@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NServiceBus;
 
@@ -47,6 +48,30 @@ namespace SharedMessages
 
             Console.WriteLine("NServiceBus Endpoint started successfully.");
         }
+
+        /*public async Task StartAsync(CancellationToken cancellationToken)
+        {
+            Console.WriteLine("Starting NServiceBus Endpoint...");
+
+            var endpointConfiguration = new EndpointConfiguration(_endpointName);
+            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            transport.StorageDirectory($"../Build/NServiceBusTransport/{_endpointName}");
+
+            endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
+            endpointConfiguration.SendFailedMessagesTo("error");
+            endpointConfiguration.AuditProcessedMessagesTo("audit");
+
+            // Integrate ASP.NET Core DI
+            endpointConfiguration.UseContainer<ServicesBuilder>(
+                customizations => { customizations.ExistingServices(serviceProvider); });
+
+            _endpointInstance = await Endpoint.Start(endpointConfiguration, cancellationToken);
+            _messageSession = _endpointInstance;
+
+            Console.WriteLine("NServiceBus Endpoint started successfully.");
+        }*/
+
+
 
 
         public async Task StopAsync(CancellationToken cancellationToken)

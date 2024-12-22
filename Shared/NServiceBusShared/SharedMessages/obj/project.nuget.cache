@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Al5l7P5mZSO/nGCKYdYgtlS5oU9fo/www5POfFAE3Gde2/MqY7vmUGNiECEhtDk/KshREwxGqd3Ank1uc/EYYQ==",
+  "dgSpecHash": "5CZ/E+3Jlfs=",
   "success": true,
   "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj",
   "expectedPackageFiles": [
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.0/microsoft.extensions.configuration.abstractions.9.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
-    "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.0/microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.diagnostics/8.0.0/microsoft.extensions.diagnostics.8.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/microsoft.extensions.diagnostics.abstractions/9.0.0/microsoft.extensions.diagnostics.abstractions.9.0.0.nupkg.sha512",

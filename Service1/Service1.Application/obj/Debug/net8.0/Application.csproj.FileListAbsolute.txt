@@ -1,0 +1,13 @@
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.sourcelink.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Application.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/bin/Debug/net8.0/Application.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/refint/Application.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/Application.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/Debug/net8.0/ref/Application.dll

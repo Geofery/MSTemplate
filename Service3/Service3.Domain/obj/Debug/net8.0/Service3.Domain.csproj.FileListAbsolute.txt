@@ -1,0 +1,12 @@
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/bin/Debug/net8.0/Service3.Domain.deps.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/bin/Debug/net8.0/Service3.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/bin/Debug/net8.0/Service3.Domain.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.AssemblyInfoInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.AssemblyInfo.cs
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.csproj.CoreCompileInputs.cache
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.sourcelink.json
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/refint/Service3.Domain.dll
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/Service3.Domain.pdb
+/Users/roed/IdeaProjects/Repo/MSTemplate/Service3/Service3.Domain/obj/Debug/net8.0/ref/Service3.Domain.dll

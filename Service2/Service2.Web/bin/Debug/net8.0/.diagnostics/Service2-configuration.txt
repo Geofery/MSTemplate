@@ -1321,6 +1321,10 @@
       "AdditionalAssemblyScanningPath": null
     }
   },
+  "Audit": {
+    "AuditQueue": "audit",
+    "AuditTTBR": "-"
+  },
   "Container": {
     "Type": "internal"
   },
@@ -1414,18 +1418,20 @@
     {
       "Name": "NServiceBus.Features.Audit",
       "EnabledByDefault": true,
-      "Active": false,
+      "Active": true,
       "PrerequisiteStatus": {
-        "IsSatisfied": false,
+        "IsSatisfied": true,
         "Reasons": [
-          "No configured audit queue was found"
+          
         ]
       },
       "Dependencies": [
         
       ],
       "Version": "9.2.3",
-      "StartupTasks": null,
+      "StartupTasks": [
+        
+      ],
       "DependenciesAreMet": true
     },
     {
@@ -1820,7 +1826,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 65388544,
+    "WorkingSet": 97669120,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",

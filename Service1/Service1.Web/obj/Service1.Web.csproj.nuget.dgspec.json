@@ -4,6 +4,229 @@
     "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/Service1.Web.csproj": {}
   },
   "projects": {
+    "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj",
+        "projectName": "Service1.Application",
+        "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj",
+        "packagesPath": "/Users/roed/.nuget/packages/",
+        "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/roed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj"
+              },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NServiceBus": {
+              "target": "Package",
+              "version": "[9.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj",
+        "projectName": "Service1.Domain",
+        "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj",
+        "packagesPath": "/Users/roed/.nuget/packages/",
+        "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/roed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj",
+        "projectName": "Service1.Infrastructure",
+        "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj",
+        "packagesPath": "/Users/roed/.nuget/packages/",
+        "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/roed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/Service1.Web.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,6 +249,15 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Application/Service1.Application.csproj"
+              },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Domain/Service1.Domain.csproj"
+              },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Infrastructure/Service1.Infrastructure.csproj"
+              },
               "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
                 "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
               }
@@ -36,6 +268,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -46,13 +283,41 @@
               "target": "Package",
               "version": "[8.0.7, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[9.2.3, )"
             },
+            "NServiceBus.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -114,12 +379,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -127,6 +401,10 @@
             "NServiceBus": {
               "target": "Package",
               "version": "[9.2.3, )"
+            },
+            "NServiceBus.MessageInterfaces": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",

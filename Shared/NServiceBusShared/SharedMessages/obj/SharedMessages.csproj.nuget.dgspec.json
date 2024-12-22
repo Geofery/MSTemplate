@@ -32,12 +32,21 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -45,6 +54,10 @@
             "NServiceBus": {
               "target": "Package",
               "version": "[9.2.3, )"
+            },
+            "NServiceBus.MessageInterfaces": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",

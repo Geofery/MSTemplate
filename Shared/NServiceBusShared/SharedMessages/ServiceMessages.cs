@@ -10,8 +10,9 @@
         public required string Content { get; set; }
     }
 
-    public class SignupDTO : ICommand
+    public class UserCreated: IEvent
     {
+        public Guid LeadId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
