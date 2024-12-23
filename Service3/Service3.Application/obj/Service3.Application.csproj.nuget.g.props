@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/roed/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nservicebus/9.2.3/buildTransitive/net8.0/NServiceBus.props" Condition="Exists('$(NuGetPackageRoot)nservicebus/9.2.3/buildTransitive/net8.0/NServiceBus.props')" />
+  </ImportGroup>
 </Project>

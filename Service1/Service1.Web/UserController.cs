@@ -36,7 +36,10 @@ namespace Web
                 {
                     Name = model.Name,
                     Email = model.Email,
-                    Password = model.Password
+                    Password = model.Password,
+                    Street = model.AddressDTO.Street,
+                    City = model.AddressDTO.City,
+                    PostalCode = model.AddressDTO.PostalCode
                 };
 
                 await _messageSession.SendLocal(command).ConfigureAwait(false);

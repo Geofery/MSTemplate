@@ -16,7 +16,12 @@ namespace Infrastructure.Repositories
 
         public async Task<User> GetMemberByIdAsync(Guid id)
         {
-            return await _dbContext.Users.FindAsync(id);
+            var result = await _dbContext.Users.FindAsync(id);
+            if (result == null)
+            {
+                throw new Exception($"No User found with that id: {id}");
+            }
+            return result;
         }
 
         public async Task<IEnumerable<User>> GetAllMembersAsync()
@@ -26,16 +31,25 @@ namespace Infrastructure.Repositories
 
         public async Task<User> SaveMemberAsync(User user)
         {
-            Console.WriteLine("IN REPO!!!!");
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
             var result = await _dbContext.Users.FindAsync(user.LeadId);
+            if (result == null)
+            {
+                throw new Exception("User not saved or found");
+            }
             return result;
+        }
+
+        public Task<bool> ValidateUserAsync(Guid userId)
+        {
+            //TODO Simulate user validation logic.
+            return Task.FromResult(true);
         }
 
         public async Task<bool> HelthCheck()
         {
             return  await _dbContext.Database.CanConnectAsync();
-        } 
+        }
     }
 }

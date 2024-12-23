@@ -9,12 +9,15 @@
   <ItemGroup>
     <None Remove="Commands\" />
     <None Remove="Events\" />
+    <None Remove="Handlers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Events\" />
+    <Folder Include="Handlers\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
     <ProjectReference Include="../Service1.Domain/Service1.Domain.csproj" />
     <ProjectReference Include="../Service1.Infrastructure/Service1.Infrastructure.csproj" />
     <PackageReference Include="NServiceBus" Version="9.2.3" />

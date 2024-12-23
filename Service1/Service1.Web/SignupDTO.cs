@@ -1,4 +1,6 @@
 ﻿using System;
+using Web;
+
 namespace Web
 {
         public class SignupDTO
@@ -6,6 +8,7 @@ namespace Web
             public string Name { get; set; }
             public string Email { get; set; }
             public string Password { get; set; }
+            public AddressDTO AddressDTO { get; set; }
         }
 }
 

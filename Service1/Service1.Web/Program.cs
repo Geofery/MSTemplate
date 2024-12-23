@@ -37,7 +37,6 @@ builder.WebHost.UseUrls("http://localhost:5001");
 builder.Logging.AddSimpleConsole(console => {
     console.IncludeScopes = true;
     console.TimestampFormat = "HH:mm:ss.ffff ";
-    //console.SingleLine = true;
 });
 builder.Logging.ClearProviders();
 builder.Logging.AddDebug();
@@ -76,7 +75,6 @@ if (signupHandler == null || userRepo == null)
 {
     Console.WriteLine($"SignupHandler or UserRepository is not resolved! SignupHandler: {signupHandler} Repo: {userRepo}?");
 }
-
 
 // Other service registrations
 var app = builder.Build();

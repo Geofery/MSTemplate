@@ -8,6 +8,8 @@ namespace Domain.Repositories
         Task<User> GetMemberByIdAsync(Guid id);
         Task<IEnumerable<User>> GetAllMembersAsync();
         Task<bool> HelthCheck();
+        Task<bool> ValidateUserAsync(Guid userId);
+
     }
 }
 
