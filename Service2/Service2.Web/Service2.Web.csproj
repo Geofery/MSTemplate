@@ -25,10 +25,13 @@
     <PackageReference Include="NServiceBus.MessageInterfaces" Version="1.0.0" />
     <PackageReference Include="NServiceBus.Extensions.Hosting" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
+    <ProjectReference Include="../Service2.Application/Service2.Application.csproj" />
+
   </ItemGroup>
 
 </Project>

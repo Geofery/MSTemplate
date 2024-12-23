@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UINeA0tyR+Y=",
+  "dgSpecHash": "wtOoqn5Fd3NVgwoWAxy+ZJ/osVc4pyk0hosx6K78u/afwJ7l5dgrAKtuqXd95kdg+AY5GFs0cJYXQDOC1QPN+Q==",
   "success": true,
   "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Web/Service2.Web.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "/Users/roed/.nuget/packages/nservicebus.messageinterfaces/1.0.0/nservicebus.messageinterfaces.1.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/nservicebus.newtonsoft.json/4.0.0/nservicebus.newtonsoft.json.4.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore/7.2.0/swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
+    "/Users/roed/.nuget/packages/swashbuckle.aspnetcore.annotations/7.2.0/swashbuckle.aspnetcore.annotations.7.2.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore.swagger/7.2.0/swashbuckle.aspnetcore.swagger.7.2.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore.swaggergen/7.2.0/swashbuckle.aspnetcore.swaggergen.7.2.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore.swaggerui/7.2.0/swashbuckle.aspnetcore.swaggerui.7.2.0.nupkg.sha512",

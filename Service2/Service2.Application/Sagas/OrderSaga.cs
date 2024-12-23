@@ -1,27 +1,28 @@
 ﻿using NServiceBus;
-using Application.Commands;
 using Application.Events;
 using SharedMessages;
+using Application.Commands;
 
 namespace Application.Sagas;
 
 public class OrderSaga : Saga<OrderSagaData>,
-    IAmStartedByMessages<OrderPlaced>,
+    IAmStartedByMessages<PlaceOrder>,
     IHandleMessages<UserValidated>,
     IHandleMessages<UserValidationFailed>,
     IHandleMessages<PaymentProcessed>,
     IHandleMessages<PaymentFailed>
 {
-    public async Task Handle(OrderPlaced message, IMessageHandlerContext context)
-    {
-        Data.OrderId = message.OrderId;
-        Data.User = message.User;
+    /*private readonly ILogger<OrderSaga> _logger;
 
-        await context.Send(new ValidateUser
-        {
-            UserId = Data.User.Id,
-            Address = Data.User.Address
-        });
+    public OrderSaga(Ilogger<OrderSaga> logger)
+    {
+        _logger = logger;
+    }*/
+
+    public async Task Handle(PlaceOrder message, IMessageHandlerContext context)
+    {
+        UpdateSagaData(message);
+        await context.SendLocal().ConfigureAwait(false);
     }
 
     public async Task Handle(UserValidated message, IMessageHandlerContext context)
@@ -58,6 +59,18 @@ public class OrderSaga : Saga<OrderSagaData>,
 
     protected override void ConfigureHowToFindSaga(SagaPropertyMapper<OrderSagaData> mapper)
     {
-        throw new NotImplementedException();
+        mapper.MapSaga(saga => saga.OrderId)
+              .ToMessage<OrderPlaced>(message => message.OrderId);
+    }
+
+    private void UpdateSagaData(PlaceOrder placeOrder)
+    {
+        Data.Name = placeOrder.Name;
+        Data.Email = placeOrder.Email;
+        Data.Password = placeOrder.Password;
+        Data.Street = placeOrder.Street;
+        Data.City = placeOrder.City;
+        Data.PostalCode = placeOrder.PostalCode;
+        Data.Products = placeOrder.Products;
     }
 }

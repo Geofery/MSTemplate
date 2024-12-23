@@ -1,6 +1,4 @@
-﻿using System;
-using Web;
-
+﻿
 namespace Web
 {
         public class SignupDTO
