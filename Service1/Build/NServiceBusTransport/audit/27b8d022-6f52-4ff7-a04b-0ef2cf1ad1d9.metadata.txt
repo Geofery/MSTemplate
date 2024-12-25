@@ -1,0 +1,23 @@
+{
+  "NServiceBus.MessageId": "0a4d4f39-c4eb-4ba5-9534-b251017f7d50",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.RelatedTo": "953e0577-0b47-4ccc-83ec-b251017f7d40",
+  "NServiceBus.ConversationId": "b166a904-33ff-4ec1-a722-b251017f7c5a",
+  "NServiceBus.CorrelationId": "324ac863-5c0b-4531-ac55-b251017f7c58",
+  "NServiceBus.OriginatingSagaId": "336892ac-1ba7-4abd-9379-b251016a2d52",
+  "NServiceBus.OriginatingSagaType": "Application.Sagas.OrderSaga, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.ReplyToAddress": "OrderService",
+  "NServiceBus.OriginatingMachine": "MacBookPro",
+  "NServiceBus.OriginatingEndpoint": "OrderService",
+  "$.diagnostics.originating.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Application.Commands.SaveOrder, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-25 23:16:14:556464 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-25 23:16:14:570470 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-25 23:16:15:099358 Z",
+  "$.diagnostics.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "$.diagnostics.hostdisplayname": "MacBookPro",
+  "NServiceBus.ProcessingMachine": "MacBookPro",
+  "NServiceBus.ProcessingEndpoint": "OrderService"
+}

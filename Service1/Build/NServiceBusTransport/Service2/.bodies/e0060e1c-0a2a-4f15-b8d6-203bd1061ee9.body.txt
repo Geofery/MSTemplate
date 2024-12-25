@@ -1,0 +1,1 @@
+﻿{"UserId":"08dd2538-50b5-4127-82c1-5855324e9892","Name":"new","Email":"test","Password":"1234","AddressId":"08dd2538-50bd-4aa7-82d7-0d4fab95d688","Street":"hej","City":"hello","PostalCode":"3440"}

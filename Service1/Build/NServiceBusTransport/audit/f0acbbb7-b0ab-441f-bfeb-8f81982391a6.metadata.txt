@@ -1,0 +1,23 @@
+{
+  "NServiceBus.MessageId": "7b6633f9-3d45-4eb0-aaf5-b2510179ff8f",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.RelatedTo": "126f2993-53ec-4ee1-8080-b2510179fef3",
+  "NServiceBus.ConversationId": "1bc5264a-dcaf-42e1-afde-b2510179fef5",
+  "NServiceBus.CorrelationId": "126f2993-53ec-4ee1-8080-b2510179fef3",
+  "NServiceBus.OriginatingSagaId": "336892ac-1ba7-4abd-9379-b251016a2d52",
+  "NServiceBus.OriginatingSagaType": "Application.Sagas.OrderSaga, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.ReplyToAddress": "OrderService",
+  "NServiceBus.OriginatingMachine": "MacBookPro",
+  "NServiceBus.OriginatingEndpoint": "OrderService",
+  "$.diagnostics.originating.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "SharedMessages.ValidateUser, SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-25 22:56:14:979327 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-25 22:56:15:127824 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-25 22:56:15:576846 Z",
+  "$.diagnostics.hostid": "6a2dd8e0bb76db2e9d514ea548a376e1",
+  "$.diagnostics.hostdisplayname": "MacBookPro",
+  "NServiceBus.ProcessingMachine": "MacBookPro",
+  "NServiceBus.ProcessingEndpoint": "UserManagement"
+}

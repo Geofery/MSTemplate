@@ -5,7 +5,7 @@
     {
         public SignupCompleted(Guid leadId, string name, string email,
             string password, Guid addressId, string street, string city,
-            string postalCode)
+            string postalCode, Guid orderId)
         {
             UserId = leadId;
             Name = name;
@@ -15,6 +15,7 @@
             Street = street;
             City = city;
             PostalCode = postalCode;
+            OrderId = orderId;
         }
 
         public Guid UserId { get; set; }
@@ -25,16 +26,19 @@
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
+        public Guid OrderId { get; set; }
     }
 
     public class UserValidated : IEvent
     {
         public Guid UserId { get; set; }
+        public Guid OrderId { get; set; }
     }
 
     public class UserValidationFailed : IEvent
     {
         public Guid UserId { get; set; }
+        public Guid OrderId { get; set; }
         public string Reason { get; set; }
     }
 
@@ -53,16 +57,19 @@
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
+        public Guid OrderId { get; set; }
     }
     //____________________________PaymentService Events____________________________//
     public class PaymentProcessed : IEvent
     {
         public Guid PaymentId { get; set; }
+        public Guid OrderId { get; set; }
     }
 
     public class PaymentFailed : IEvent
     {
         public Guid PaymentId { get; set; }
+        public Guid OrderId { get; set; }
         public string Reason { get; set; }
     }
 

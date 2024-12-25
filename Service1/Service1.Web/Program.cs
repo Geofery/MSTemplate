@@ -105,9 +105,6 @@ app.MapGet("/health-check", async (AppDbContext dbContext) =>
     }
 });
 
-
-
-
 app.UseRouting();
 app.MapControllers(); 
 app.Run();

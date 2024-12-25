@@ -23,9 +23,9 @@ namespace Application.Handlers
         var signup = new User(new Guid(), message.Name, message.Email, message.Password,
             new Address(new Guid(), message.Street, message.City, message.PostalCode));
         var result = await _userRepository.SaveMemberAsync(signup).ConfigureAwait(false);
-
+            
         var signupCompleted = new SignupCompleted(result.UserId, result.Name, result.Email,
-            result.Password, result.Address.Id, result.Address.Street, result.Address.City, result.Address.PostalCode);
+            result.Password, result.Address.Id, result.Address.Street, result.Address.City, result.Address.PostalCode, message.OrderId);
         _logger.LogInformation($"Message published from UserManagement{message}");
         await context.Publish(signupCompleted).ConfigureAwait(false);
     }

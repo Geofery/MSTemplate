@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "5741b08a-6690-4281-b1f4-b251017bec67",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "af5e0980-5be9-4580-849a-b251017beba7",
+  "NServiceBus.ConversationId": "22c4e0e7-7458-4228-bc28-b251017beb38",
+  "NServiceBus.CorrelationId": "b9786208-d580-4042-aa72-b251017beb36",
+  "NServiceBus.ReplyToAddress": "UserManagement",
+  "NServiceBus.OriginatingMachine": "MacBookPro",
+  "NServiceBus.OriginatingEndpoint": "UserManagement",
+  "$.diagnostics.originating.hostid": "6a2dd8e0bb76db2e9d514ea548a376e1",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "SharedMessages.UserValidationFailed, SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-25 23:03:15:572198 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-25 23:03:15:623621 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-25 23:03:15:773496 Z",
+  "$.diagnostics.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "$.diagnostics.hostdisplayname": "MacBookPro",
+  "NServiceBus.ProcessingMachine": "MacBookPro",
+  "NServiceBus.ProcessingEndpoint": "OrderService"
+}

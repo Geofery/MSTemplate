@@ -38,12 +38,14 @@ namespace Infrastructure.Repositories
             {
                 throw new Exception("User not saved or found");
             }
+            //TODO: DET SOM SENDES RETUR SKAL INDEHOLDE ORDERID
             return result;
         }
 
         public async Task<Guid> ValidateUserAsync(string email)
         {
-            var result = await _dbContext.Users.FindAsync(email);
+            var result = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+
             if (result == null)
             {
                 return Guid.Empty;

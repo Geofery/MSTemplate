@@ -45,11 +45,12 @@ public class OrderSaga : Saga<OrderSagaData>,
     public async Task Handle(UserValidationFailed message, IMessageHandlerContext context)
     {
         //TODO: Add logger
-        Console.WriteLine("{reason}: Creating new user.",message.Reason);
+        Console.WriteLine($"{message.Reason}: Creating new user.");
         // User doesn't exist, create a new user
         await context.Send(new SignupCommand
         {
             Name = Data.Name,
+            OrderId = Data.OrderId,
             Email = Data.Email,
             Password = Data.Password,
             Street = Data.Street,
@@ -103,6 +104,10 @@ public class OrderSaga : Saga<OrderSagaData>,
     protected override void ConfigureHowToFindSaga(SagaPropertyMapper<OrderSagaData> mapper)
     {
         mapper.MapSaga(saga => saga.OrderId)
-              .ToMessage<PlaceOrder>(message => message.OrderId);
-    }
+              .ToMessage<PlaceOrder>(message => message.OrderId)
+              .ToMessage<UserValidationFailed>(message => message.OrderId)
+              .ToMessage<UserValidated>(message => message.OrderId)
+              .ToMessage<PaymentProcessed>(message => message.OrderId)
+              .ToMessage<PaymentFailed>(message => message.OrderId);
+}
 }

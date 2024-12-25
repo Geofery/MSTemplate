@@ -1,12 +1,11 @@
 using Microsoft.OpenApi.Models;
-using Web;
-using SharedMessages;
 using Microsoft.EntityFrameworkCore;
 using Application.Handlers;
 using Domain.Repositories;
 using Infrastructure.Repositories;
-using Microsoft.Data.SqlClient;
 using MySqlConnector;
+using SharedMessages;
+using Application.Commands;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +31,12 @@ builder.Host.UseNServiceBus(context =>
     endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
     endpointConfiguration.SendFailedMessagesTo("error");
     endpointConfiguration.AuditProcessedMessagesTo("audit");
+
+    // Routing configuration
+    var routing = transport.Routing();
+    routing.RouteToEndpoint(typeof(ValidateUser), "UserManagement");
+    routing.RouteToEndpoint(typeof(SignupCommand), "UserManagement");
+    routing.RouteToEndpoint(typeof(SaveOrder), "OrderService");
 
     //Saga Persistence
     var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();
@@ -74,7 +79,36 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "OrderService API v1"));
 }
 
+// Ensure database is created or updated
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    if (dbContext.Database.EnsureCreated())
+    {
+        Console.WriteLine("Database created successfully.");
+    }
+    else
+    {
+        Console.WriteLine("Database already exists.");
+    }
+}
+
+app.MapGet("/", () => "OrderService is running!");
+app.MapGet("/health-check", async (AppDbContext dbContext) =>
+{
+    try
+    {
+        var canConnect = await dbContext.Database.CanConnectAsync();
+        return canConnect ? Results.Ok("Database connection successful!") : Results.Problem("Cannot connect to the database.");
+    }
+    catch (Exception ex)
+    {
+        return Results.Problem($"Database connection failed: {ex.Message}");
+    }
+});
 app.UseRouting();
 app.MapControllers();
-app.MapGet("/", () => "OrderService is running!");
+Console.WriteLine("System should be running -_- ");
+
 app.Run();
+

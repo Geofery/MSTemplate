@@ -1,0 +1,1 @@
+﻿{"Name":"new","Email":"test","Password":"1234","Street":"hej","City":"hello","PostalCode":"3440"}

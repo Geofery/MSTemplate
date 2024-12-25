@@ -2068,7 +2068,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 97779712,
+    "WorkingSet": 92872704,
     "SystemPageSize": 4096,
     "HostName": "MacBookPro",
     "UserName": "roed",

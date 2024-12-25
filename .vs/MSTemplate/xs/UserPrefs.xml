@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{72A88AF9-A87E-4328-986B-5979B19F5613}|https">
+﻿<Properties StartupConfiguration="{FCE033B0-4D3C-4EBF-B9DB-90ADDC60BEEE}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
@@ -6,64 +6,30 @@
   <MonoDevelop.Ide.ItemProperties.Service2.Service2.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Service2/Service2.Web/OrderController.cs">
-    <Files>
-      <File FileName="Shared/NServiceBusShared/SharedMessages/ServiceMessages.cs" Line="6" Column="16" />
-      <File FileName="Service2/Service2.Web/Program.cs" Line="28" Column="27" />
-      <File FileName="Service2/Service2.Application/Events/OrderPlaced.cs" Line="1" Column="1" />
-      <File FileName="Service1/Service1.Application/Handlers/ValidateUserHandler.cs" Line="1" Column="1" />
-      <File FileName="Service2/Service2.Application/Handlers/SaveOrderHandler.cs" Line="9" Column="24" />
-      <File FileName="Service1/Service1.Infrastructure/Service1.Infrastructure.csproj" Line="28" Column="1" />
-      <File FileName="Service2/Service2.Infrastructure/OrderRepository.cs" Line="20" Column="10" />
-      <File FileName="Service1/Service1.Domain/Repositories/IUserRepository.cs" Line="1" Column="1" />
-      <File FileName="Service1/Service1.Infrastructure/Repositories/AppDbContext.cs" Line="23" Column="1" />
-      <File FileName="Service2/Service2.Infrastructure/AppDbContext.cs" Line="20" Column="41" />
-      <File FileName="Service2/Service2.Domain/Models/Order.cs" Line="9" Column="29" />
-      <File FileName="Service2/Service2.Application/Sagas/OrderSaga.cs" Line="10" Column="34" />
-      <File FileName="Service1/Service1.Web/UserController.cs" Line="1" Column="1" />
-      <File FileName="Service2/Service2.Web/OrderController.cs" Line="18" Column="10" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MSTemplate" expanded="True">
             <Node name="Service1" expanded="True">
-              <Node name="Service1.Application" expanded="True">
-                <Node name="Events" expanded="True" />
-                <Node name="Handlers" expanded="True" />
-              </Node>
-              <Node name="Service1.Domain" expanded="True">
-                <Node name="Models" expanded="True" />
+              <Node name="Service1.Infrastructure">
                 <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Service1.Infrastructure" expanded="True">
-                <Node name="Repositories" expanded="True" />
-              </Node>
-              <Node name="Service1.Web" expanded="True" />
             </Node>
             <Node name="Service2" expanded="True">
-              <Node name="Service2.Application" expanded="True">
-                <Node name="Commands" expanded="True" />
-                <Node name="Events" expanded="True" />
-                <Node name="Handlers" expanded="True" />
-                <Node name="Sagas" expanded="True" />
+              <Node name="Service2.Web">
+                <Node name="Program.cs" selected="True" />
               </Node>
-              <Node name="Service2.Domain" expanded="True">
-                <Node name="Models" expanded="True" />
-                <Node name="Repositories" expanded="True" />
-              </Node>
-              <Node name="Service2.Infrastructure" expanded="True">
-                <Node name="Repositories" expanded="True" />
-              </Node>
-              <Node name="Service2.Web" expanded="True" />
             </Node>
-            <Node name="Service3" expanded="True">
-              <Node name="Service3.Application">
-                <Node name="Handlers" expanded="True" />
-              </Node>
+            <Node name="Service3" expanded="True" />
+            <Node name="Shared" expanded="True">
+              <Node name="NServiceBusShared" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

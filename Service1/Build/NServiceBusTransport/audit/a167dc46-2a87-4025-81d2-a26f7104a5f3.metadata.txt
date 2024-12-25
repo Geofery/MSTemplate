@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "b9786208-d580-4042-aa72-b251017beb36",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.ConversationId": "22c4e0e7-7458-4228-bc28-b251017beb38",
+  "NServiceBus.CorrelationId": "b9786208-d580-4042-aa72-b251017beb36",
+  "NServiceBus.ReplyToAddress": "OrderService",
+  "NServiceBus.OriginatingMachine": "MacBookPro",
+  "NServiceBus.OriginatingEndpoint": "OrderService",
+  "$.diagnostics.originating.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Application.Commands.PlaceOrder, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-25 23:03:14:612264 Z",
+  "traceparent": "00-c871bb9342323991f8dabd8124c60fc4-a43c6ddd31461162-00",
+  "NServiceBus.ProcessingStarted": "2024-12-25 23:03:14:710895 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-25 23:03:14:946983 Z",
+  "$.diagnostics.hostid": "51b93c239e5de1d70a1168f9c4f96e23",
+  "$.diagnostics.hostdisplayname": "MacBookPro",
+  "NServiceBus.ProcessingMachine": "MacBookPro",
+  "NServiceBus.ProcessingEndpoint": "OrderService"
+}

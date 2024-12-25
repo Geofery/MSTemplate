@@ -1,0 +1,15 @@
+{
+  "NServiceBus.MessageId": "a877eab0-8a6c-448a-bbde-b251017bed2c",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "595addfe-9c87-4d0d-94b0-b251017beca4",
+  "NServiceBus.ConversationId": "22c4e0e7-7458-4228-bc28-b251017beb38",
+  "NServiceBus.CorrelationId": "b9786208-d580-4042-aa72-b251017beb36",
+  "NServiceBus.ReplyToAddress": "UserManagement",
+  "NServiceBus.OriginatingMachine": "MacBookPro",
+  "NServiceBus.OriginatingEndpoint": "UserManagement",
+  "$.diagnostics.originating.hostid": "6a2dd8e0bb76db2e9d514ea548a376e1",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "SharedMessages.SignupCompleted, SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-25 23:03:16:200685 Z"
+}
