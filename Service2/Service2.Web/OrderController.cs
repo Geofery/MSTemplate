@@ -6,6 +6,7 @@ namespace Web
 {
     [ApiController]
     [Route("api/[controller]")]
+    
     public class OrderController : ControllerBase
     {
         private readonly IMessageSession _messageSession;
@@ -19,7 +20,7 @@ namespace Web
         }
 
         [HttpPost("place_order", Name = "Place order")]
-        [SwaggerResponse(StatusCodes.Status201Created, "Order process for new order started")]
+        [SwaggerResponse(StatusCodes.Status201Created, "New Order process started")]
         public async Task<IActionResult> PlaceOrder([FromBody] OrderDTO model)
         {
             try
@@ -29,8 +30,7 @@ namespace Web
                     return BadRequest(ModelState);
                 }
 
-                _logger.LogInformation("PlaceOrder endpoint hit in OrderController.");
-                _logger.LogInformation($"THIS IS MY MESSAGE {model}");
+                _logger.LogInformation("PlaceOrder endpoint hit in OrderController: {model}.", model);
 
                 var command = new PlaceOrder
                 {
@@ -46,13 +46,13 @@ namespace Web
      
 
                 await _messageSession.SendLocal(command).ConfigureAwait(false);
-                _logger.LogInformation($"MessageFromService1 successfully send: {command}");
+                _logger.LogInformation("OrderService successfully send: {command}", command);
 
                 return Accepted();
             }
             catch (Exception ex)
             {
-                _logger.LogError($"Failed to publish message: {ex.Message}");
+                _logger.LogError("Failed to publish message: {ex.Message}", ex.Message);
                 return StatusCode(500);
             }
 

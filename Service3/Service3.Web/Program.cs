@@ -4,15 +4,18 @@ using SharedMessages;
 var builder = WebApplication.CreateBuilder(args);
 
 // Register NServiceBusService and IMessageSession
-// Register NServiceBusService and IMessageSession
-builder.Services.AddSingleton<NServiceBusService>(provider =>
-    new NServiceBusService("Service3")); // Replace "Service1" with your endpoint name
-builder.Services.AddSingleton<IMessageSession>(provider =>
+builder.Host.UseNServiceBus(context =>
 {
-    var nServiceBusService = provider.GetRequiredService<NServiceBusService>();
-    return nServiceBusService.MessageSession;
+    var endpointConfiguration = new EndpointConfiguration("PaymentService");
+    var transport = endpointConfiguration.UseTransport<LearningTransport>();
+    transport.StorageDirectory("../../Service1/Build/NServiceBusTransport");
+
+    endpointConfiguration.UseSerialization<NewtonsoftJsonSerializer>();
+    endpointConfiguration.SendFailedMessagesTo("error");
+    endpointConfiguration.AuditProcessedMessagesTo("audit");
+
+    return endpointConfiguration;
 });
-builder.Services.AddHostedService(provider => provider.GetRequiredService<NServiceBusService>());
 
 
 builder.WebHost.UseUrls("http://localhost:5003");

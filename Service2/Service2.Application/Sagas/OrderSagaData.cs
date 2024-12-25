@@ -1,6 +1,9 @@
 ﻿using System;
+using NServiceBus.Persistence.Sql;
+
 namespace Application.Sagas;
 
+[SqlSaga]
 public class OrderSagaData : ContainSagaData
 {
     public Guid OrderId { get; set; }

@@ -16,6 +16,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
+    <ProjectReference Include="../Service3.Application/Service3.Application.csproj" />
+    <ProjectReference Include="../Service3.Domain/Service3.Domain.csproj" />
+    <ProjectReference Include="../Service3.Infrastructure/Service3.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

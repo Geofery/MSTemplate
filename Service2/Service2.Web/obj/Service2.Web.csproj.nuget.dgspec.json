@@ -26,6 +26,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj"
+              },
               "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
                 "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
               }
@@ -36,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -45,6 +53,136 @@
             "NServiceBus": {
               "target": "Package",
               "version": "[9.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj",
+        "projectName": "Service2.Domain",
+        "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj",
+        "packagesPath": "/Users/roed/.nuget/packages/",
+        "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/roed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/Service2.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/Service2.Infrastructure.csproj",
+        "projectName": "Service2.Infrastructure",
+        "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/Service2.Infrastructure.csproj",
+        "packagesPath": "/Users/roed/.nuget/packages/",
+        "outputPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/roed/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [
@@ -92,6 +230,12 @@
               "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Application/Service2.Application.csproj": {
                 "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Application/Service2.Application.csproj"
               },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj"
+              },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/Service2.Infrastructure.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Infrastructure/Service2.Infrastructure.csproj"
+              },
               "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
                 "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
               }
@@ -102,6 +246,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -147,6 +296,10 @@
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -208,6 +361,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -233,6 +391,10 @@
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [

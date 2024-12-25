@@ -4,20 +4,11 @@ using SharedMessages;
 using Domain.Repositories;
 using Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Application.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Register NServiceBusService and IMessageSession
-/*builder.Services.AddSingleton<NServiceBusService>(provider =>
-    new NServiceBusService("UserManagement"));
-builder.Services.AddSingleton<IMessageSession>(provider =>
-{
-    var nServiceBusService = provider.GetRequiredService<NServiceBusService>();
-    return nServiceBusService.MessageSession;
-});
-
-builder.Services.AddHostedService(provider => provider.GetRequiredService<NServiceBusService>());
-*/
 builder.Host.UseNServiceBus(context =>
 {
     var endpointConfiguration = new EndpointConfiguration("UserManagement");
@@ -86,12 +77,26 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UserManagement API v1"));
 }
 
-app.MapGet("/health-check", async (IUserRepository userRepository) =>
+// Ensure database is created or updated
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    if (dbContext.Database.EnsureCreated())
+    {
+        Console.WriteLine("Database created successfully.");
+    }
+    else
+    {
+        Console.WriteLine("Database already exists.");
+    }
+}
+
+app.MapGet("/", () => "UserManagement is running!");
+app.MapGet("/health-check", async (AppDbContext dbContext) =>
 {
     try
     {
-        //var canConnect = await dbContext.Database.CanConnectAsync();
-        var canConnect = await userRepository.HelthCheck();
+        var canConnect = await dbContext.Database.CanConnectAsync();
         return canConnect ? Results.Ok("Database connection successful!") : Results.Problem("Cannot connect to the database.");
     }
     catch (Exception ex)
@@ -100,16 +105,9 @@ app.MapGet("/health-check", async (IUserRepository userRepository) =>
     }
 });
 
-// Applies pending migrations
-using (var scope = app.Services.CreateScope())
-{
-    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    dbContext.Database.Migrate(); 
-}
 
 
 
 app.UseRouting();
 app.MapControllers(); 
-app.MapGet("/", () => "UserManagement is running!");
 app.Run();

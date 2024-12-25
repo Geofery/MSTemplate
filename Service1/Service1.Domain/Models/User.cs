@@ -1,9 +1,10 @@
-﻿using Domain.Models;
-
-namespace Domain.Models;
+﻿namespace Domain.Models;
 
 public class User
 {
+    // Parameterless constructor for EF Core
+    private User() { }
+
 
     public User(Guid userId, string name, string email, string password, Address address) {
         UserId = userId;

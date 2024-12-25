@@ -12,7 +12,8 @@
           "Microsoft.Extensions.Hosting.Abstractions": "9.0.0",
           "NServiceBus": "9.2.3",
           "NServiceBus.MessageInterfaces": "1.0.0",
-          "NServiceBus.Newtonsoft.Json": "4.0.0"
+          "NServiceBus.Newtonsoft.Json": "4.0.0",
+          "NServiceBus.Persistence.Sql": "8.1.0"
         },
         "runtime": {
           "SharedMessages.dll": {}
@@ -213,6 +214,18 @@
           }
         }
       },
+      "NServiceBus.Persistence.Sql/8.1.0": {
+        "dependencies": {
+          "NServiceBus": "9.2.3",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/NServiceBus.Persistence.Sql.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.1.0.0"
+          }
+        }
+      },
       "System.Diagnostics.DiagnosticSource/9.0.0": {
         "runtime": {
           "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
@@ -378,6 +391,13 @@
       "sha512": "sha512-ZtSsBIj7VvMWXVYk5JVpLkSM+z/G2iF9M5fOGgFJ8R/mAhk9Xa5BEbBQem0FRlxnyjwPENw7YiSK8Z5A8vfBwA==",
       "path": "nservicebus.newtonsoft.json/4.0.0",
       "hashPath": "nservicebus.newtonsoft.json.4.0.0.nupkg.sha512"
+    },
+    "NServiceBus.Persistence.Sql/8.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XbJFwGAkOGMsDkMwEyKJ2XfhzbzDjq9eHsxW37KCTbsmuG2Y+Zy1F+9OpfTrQzKfjkFX1rivXudXSV5yKdplZg==",
+      "path": "nservicebus.persistence.sql/8.1.0",
+      "hashPath": "nservicebus.persistence.sql.8.1.0.nupkg.sha512"
     },
     "System.Diagnostics.DiagnosticSource/9.0.0": {
       "type": "package",

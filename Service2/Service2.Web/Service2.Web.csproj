@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c09ce3fd-3ba6-40df-9c44-9db6ba9d1fd4</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
@@ -26,12 +27,14 @@
     <PackageReference Include="NServiceBus.Extensions.Hosting" Version="3.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.2.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
     <ProjectReference Include="../Service2.Application/Service2.Application.csproj" />
-
+    <ProjectReference Include="../Service2.Domain/Service2.Domain.csproj" />
+    <ProjectReference Include="../Service2.Infrastructure/Service2.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

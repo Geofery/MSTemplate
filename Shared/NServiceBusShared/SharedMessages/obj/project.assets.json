@@ -324,6 +324,26 @@
           }
         }
       },
+      "NServiceBus.Persistence.Sql/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "NServiceBus": "[9.0.0, 10.0.0)",
+          "Newtonsoft.Json": "[13.0.3, 14.0.0)"
+        },
+        "compile": {
+          "lib/net8.0/NServiceBus.Persistence.Sql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NServiceBus.Persistence.Sql.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/NServiceBus.Persistence.Sql.targets": {}
+        }
+      },
       "System.Diagnostics.DiagnosticSource/9.0.0": {
         "type": "package",
         "compile": {
@@ -941,6 +961,28 @@
         "nservicebus.newtonsoft.json.nuspec"
       ]
     },
+    "NServiceBus.Persistence.Sql/8.1.0": {
+      "sha512": "XbJFwGAkOGMsDkMwEyKJ2XfhzbzDjq9eHsxW37KCTbsmuG2Y+Zy1F+9OpfTrQzKfjkFX1rivXudXSV5yKdplZg==",
+      "type": "package",
+      "path": "nservicebus.persistence.sql/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "NServiceBus.png",
+        "Package-README.md",
+        "build/net8.0/NServiceBus.Persistence.Sql.targets",
+        "build/net8.0/task/net472/NServiceBus.Persistence.Sql.ScriptBuilderTask.dll",
+        "build/net8.0/task/net8.0/Mono.Cecil.dll",
+        "build/net8.0/task/net8.0/NServiceBus.Persistence.Sql.ScriptBuilder.dll",
+        "build/net8.0/task/net8.0/NServiceBus.Persistence.Sql.ScriptBuilderTask.dll",
+        "buildTransitive/net8.0/NServiceBus.Persistence.Sql.targets",
+        "lib/net8.0/NServiceBus.Persistence.Sql.dll",
+        "lib/net8.0/NServiceBus.Persistence.Sql.xml",
+        "nservicebus.persistence.sql.8.1.0.nupkg.sha512",
+        "nservicebus.persistence.sql.nuspec"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/9.0.0": {
       "sha512": "ddppcFpnbohLWdYKr/ZeLZHmmI+DXFgZ3Snq+/E7SwcdW4UnvxmaugkwGywvGVWkHPGCSZjCP+MLzu23AL5SDw==",
       "type": "package",
@@ -1075,7 +1117,8 @@
       "Microsoft.Extensions.Hosting.Abstractions >= 9.0.0",
       "NServiceBus >= 9.2.3",
       "NServiceBus.MessageInterfaces >= 1.0.0",
-      "NServiceBus.Newtonsoft.Json >= 4.0.0"
+      "NServiceBus.Newtonsoft.Json >= 4.0.0",
+      "NServiceBus.Persistence.Sql >= 8.1.0"
     ]
   },
   "packageFolders": {
@@ -1139,6 +1182,10 @@
           "NServiceBus.Newtonsoft.Json": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "NServiceBus.Persistence.Sql": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           }
         },
         "imports": [

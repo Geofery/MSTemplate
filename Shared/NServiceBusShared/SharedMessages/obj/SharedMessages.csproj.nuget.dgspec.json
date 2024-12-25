@@ -62,6 +62,10 @@
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             }
           },
           "imports": [

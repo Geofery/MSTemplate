@@ -14,6 +14,10 @@
         "FileVersion": "1.0.0"
       },
       {
+        "FullName": "SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+        "FileVersion": "1.0.0"
+      },
+      {
         "FullName": "NServiceBus.MessageInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "1.0.0"
       },
@@ -26,8 +30,8 @@
         "FileVersion": "4.0.0"
       },
       {
-        "FullName": "SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-        "FileVersion": "1.0.0"
+        "FullName": "NServiceBus.Persistence.Sql, Version=8.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
+        "FileVersion": "8.1.0"
       }
     ],
     "ErrorsThrownDuringScanning": false,
@@ -1205,6 +1209,10 @@
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
+        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Xml.dll",
+        "SkipReason": "File is a .NET runtime assembly."
+      },
+      {
         "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.JSInterop.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
@@ -1378,10 +1386,6 @@
       },
       {
         "FilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/System.Composition.Convention.dll",
-        "SkipReason": "File is a .NET runtime assembly."
-      },
-      {
-        "FilePath": "/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App/8.0.7/Microsoft.Extensions.Configuration.Xml.dll",
         "SkipReason": "File is a .NET runtime assembly."
       },
       {
@@ -1953,12 +1957,110 @@
       "Version": "9.2.3",
       "StartupTasks": null,
       "DependenciesAreMet": false
+    },
+    {
+      "Name": "InstallerFeature",
+      "EnabledByDefault": false,
+      "Active": false,
+      "PrerequisiteStatus": null,
+      "Dependencies": [
+        
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": null,
+      "DependenciesAreMet": false
+    },
+    {
+      "Name": "SqlOutboxFeature",
+      "EnabledByDefault": false,
+      "Active": false,
+      "PrerequisiteStatus": null,
+      "Dependencies": [
+        [
+          "NServiceBus.Features.Outbox"
+        ],
+        [
+          "SqlStorageSessionFeature"
+        ]
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": null,
+      "DependenciesAreMet": false
+    },
+    {
+      "Name": "SqlSagaFeature",
+      "EnabledByDefault": false,
+      "Active": false,
+      "PrerequisiteStatus": null,
+      "Dependencies": [
+        [
+          "NServiceBus.Features.Sagas"
+        ],
+        [
+          "SqlStorageSessionFeature"
+        ]
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": null,
+      "DependenciesAreMet": false
+    },
+    {
+      "Name": "SqlValidateStorageTypeCombinationFeature",
+      "EnabledByDefault": true,
+      "Active": true,
+      "PrerequisiteStatus": {
+        "IsSatisfied": true,
+        "Reasons": [
+          
+        ]
+      },
+      "Dependencies": [
+        [
+          "NServiceBus.Features.RootFeature",
+          "SqlOutboxFeature"
+        ],
+        [
+          "NServiceBus.Features.RootFeature",
+          "SqlSagaFeature"
+        ]
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": [
+        
+      ],
+      "DependenciesAreMet": true
+    },
+    {
+      "Name": "SqlSubscriptionFeature",
+      "EnabledByDefault": false,
+      "Active": false,
+      "PrerequisiteStatus": null,
+      "Dependencies": [
+        [
+          "NServiceBus.Features.MessageDrivenSubscriptions"
+        ]
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": null,
+      "DependenciesAreMet": false
+    },
+    {
+      "Name": "SqlStorageSessionFeature",
+      "EnabledByDefault": false,
+      "Active": false,
+      "PrerequisiteStatus": null,
+      "Dependencies": [
+        
+      ],
+      "Version": "8.1.0",
+      "StartupTasks": null,
+      "DependenciesAreMet": false
     }
   ],
   "Hosting": {
-    "HostId": "a6572630-ef78-2f1f-5b6d-74a2027d43c1",
-    "HostDisplayName": "jeffreys-mbp",
-    "MachineName": "jeffreys-mbp",
+    "HostId": "6a2dd8e0-bb76-db2e-9d51-4ea548a376e1",
+    "HostDisplayName": "MacBookPro",
+    "MachineName": "MacBookPro",
     "OSPlatform": 4,
     "OSVersion": "Unix 15.2.0",
     "IsServerGC": true,
@@ -1966,9 +2068,9 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 96993280,
+    "WorkingSet": 97779712,
     "SystemPageSize": 4096,
-    "HostName": "jeffreys-mbp.lan",
+    "HostName": "MacBookPro",
     "UserName": "roed",
     "PathToExe": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/Service1.Web.dll"
   },
@@ -1990,14 +2092,17 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 6,
+    "NumberOfMessagesFoundAtStartup": 9,
     "Messages": [
-      "SharedMessages.MessageFromService2",
+      "SharedMessages.ProcessPayment",
       "SharedMessages.SignupCompleted",
-      "SharedMessages.UserCreated",
-      "Application.Commands.SignupCommand",
+      "SharedMessages.PaymentFailed",
       "Application.Events.SignupCompleted",
-      "SharedMessages.MessageFromService1"
+      "SharedMessages.UserValidated",
+      "SharedMessages.PaymentProcessed",
+      "SharedMessages.SignupCommand",
+      "SharedMessages.UserValidationFailed",
+      "SharedMessages.ValidateUser"
     ]
   },
   "Receiving": {
@@ -2017,8 +2122,11 @@
       
     ],
     "MessageHandlers": {
-      "Application.Commands.SignupCommand": [
-        "Web.SignupHandler"
+      "SharedMessages.SignupCommand": [
+        "Application.Handlers.SignupHandler"
+      ],
+      "SharedMessages.ValidateUser": [
+        "Application.Handlers.ValidateUserHandler"
       ]
     }
   },

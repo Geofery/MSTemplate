@@ -13,8 +13,10 @@ public class OrderSaga : Saga<OrderSagaData>,
     IHandleMessages<PaymentProcessed>,
     IHandleMessages<PaymentFailed>
 {
+    //TODO: Add missing handlers
     public async Task Handle(PlaceOrder message, IMessageHandlerContext context)
     {
+        Console.WriteLine("In Saga PlaceOrder");
         Data.OrderId = message.OrderId;
         Data.Name = message.Name;
         Data.Email = message.Email;
@@ -59,8 +61,6 @@ public class OrderSaga : Saga<OrderSagaData>,
     public async Task Handle(SignupCompleted message, IMessageHandlerContext context)
     {
         Data.UserId = message.UserId;
-        //TODO: SaveOrderHandler
-        // Proceed to save the order
         await context.Send(new SaveOrder
         {
             UserId = Data.UserId,
@@ -74,6 +74,7 @@ public class OrderSaga : Saga<OrderSagaData>,
         Data.PaymentId = message.PaymentId;
 
         // Mark the saga as complete
+        //TODO: Create OrderCompletedHandler
         MarkAsComplete();
         await context.Publish(new OrderCompleted
         {
@@ -86,7 +87,8 @@ public class OrderSaga : Saga<OrderSagaData>,
     {
         Data.PaymentId = message.PaymentId;
 
-        // Log the reason for failure or perform other logic
+        // Log the reason for failure or perform other
+        //TODO: Create CancelOrderHandler
         await context.Send(new CancelOrder
         {
             OrderId = Data.OrderId,

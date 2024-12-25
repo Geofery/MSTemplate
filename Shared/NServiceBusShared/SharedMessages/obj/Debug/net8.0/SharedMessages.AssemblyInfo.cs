@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharedMessages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5dc7669a2496d0f08db71a55031284e587626f8a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1642ba96474c24471d07f1e6a40bdef6d40e429")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharedMessages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharedMessages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

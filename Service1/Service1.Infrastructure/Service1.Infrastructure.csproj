@@ -21,9 +21,11 @@
 
   <ItemGroup>
     <None Remove="Repositories\" />
+    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Repositories\" />
     <ProjectReference Include="../Service1.Domain/Service1.Domain.csproj" />
+    <Folder Include="Migrations\" />
   </ItemGroup>
 </Project>

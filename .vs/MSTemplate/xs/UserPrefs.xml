@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{FCE033B0-4D3C-4EBF-B9DB-90ADDC60BEEE}|https">
+﻿<Properties StartupConfiguration="{72A88AF9-A87E-4328-986B-5979B19F5613}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
@@ -6,52 +6,62 @@
   <MonoDevelop.Ide.ItemProperties.Service2.Service2.Web PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Service1/Service1.Web/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service2/Service2.Web/OrderController.cs">
     <Files>
-      <File FileName="Service1/Service1.Web/UserController.cs" Line="13" Column="1" />
-      <File FileName="Shared/NServiceBusShared/SharedMessages/ServiceMessages.cs" Line="35" Column="6" />
-      <File FileName="Service1/Service1.Web/Program.cs" Line="26" Column="1" />
-      <File FileName="Service1/Service1.Web/appsettings.json" />
-      <File FileName="Service1/Service1.Application/Commands/SignupCommand.cs" />
-      <File FileName="Service1/Service1.Application/Events/SignupCompleted.cs" Line="3" Column="2" />
-      <File FileName="Service1/Service1.Infrastructure/Service1.Infrastructure.csproj" />
-      <File FileName="Shared/NServiceBusShared/SharedMessages/NServiceBusService.cs" Line="33" Column="9" />
-      <File FileName="../../../.microsoft/usersecrets/0f5d8699-bf36-4d77-82ab-147d3b5d3ef6/secrets.json" />
-      <File FileName="Service1/Service1.Infrastructure/Repositories/DbContext.cs" Line="8" Column="18" />
-      <File FileName="Service1/Service1.Web/Service1.Web.csproj" Line="26" Column="1" />
-      <File FileName="Service1/Service1.Infrastructure/Repositories/UserRepository.cs" Line="20" Column="10" />
-      <File FileName="Service1/Service1.Domain/Repositories/IUserRepository.cs" Line="10" Column="18" />
-      <File FileName="Service1/Service1.Web/SignupHandler.cs" Line="28" Column="64" />
-      <File FileName="Service1/Service1.Domain/Models/User.cs" Line="1" Column="1" />
-      <File FileName="Service2/Service2.Web/Handlers/MessageHandler.cs" Line="5" Column="11" />
-      <File FileName="Service2/Service2.Web/Program.cs" Line="17" Column="50" />
-      <File FileName="Service2/Service2.Web/Controller.cs" Line="1" Column="1" />
+      <File FileName="Shared/NServiceBusShared/SharedMessages/ServiceMessages.cs" Line="6" Column="16" />
+      <File FileName="Service2/Service2.Web/Program.cs" Line="28" Column="27" />
+      <File FileName="Service2/Service2.Application/Events/OrderPlaced.cs" Line="1" Column="1" />
+      <File FileName="Service1/Service1.Application/Handlers/ValidateUserHandler.cs" Line="1" Column="1" />
+      <File FileName="Service2/Service2.Application/Handlers/SaveOrderHandler.cs" Line="9" Column="24" />
+      <File FileName="Service1/Service1.Infrastructure/Service1.Infrastructure.csproj" Line="28" Column="1" />
+      <File FileName="Service2/Service2.Infrastructure/OrderRepository.cs" Line="20" Column="10" />
+      <File FileName="Service1/Service1.Domain/Repositories/IUserRepository.cs" Line="1" Column="1" />
+      <File FileName="Service1/Service1.Infrastructure/Repositories/AppDbContext.cs" Line="23" Column="1" />
+      <File FileName="Service2/Service2.Infrastructure/AppDbContext.cs" Line="20" Column="41" />
+      <File FileName="Service2/Service2.Domain/Models/Order.cs" Line="9" Column="29" />
+      <File FileName="Service2/Service2.Application/Sagas/OrderSaga.cs" Line="10" Column="34" />
+      <File FileName="Service1/Service1.Web/UserController.cs" Line="1" Column="1" />
+      <File FileName="Service2/Service2.Web/OrderController.cs" Line="18" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="MSTemplate" expanded="True">
             <Node name="Service1" expanded="True">
-              <Node name="Service1.Application">
+              <Node name="Service1.Application" expanded="True">
                 <Node name="Events" expanded="True" />
+                <Node name="Handlers" expanded="True" />
               </Node>
-              <Node name="Service1.Domain">
+              <Node name="Service1.Domain" expanded="True">
                 <Node name="Models" expanded="True" />
                 <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Service1.Infrastructure">
+              <Node name="Service1.Infrastructure" expanded="True">
                 <Node name="Repositories" expanded="True" />
               </Node>
-              <Node name="Service1.Web">
-                <Node name="Program.cs" selected="True" />
-              </Node>
+              <Node name="Service1.Web" expanded="True" />
             </Node>
             <Node name="Service2" expanded="True">
-              <Node name="Service2.Web">
+              <Node name="Service2.Application" expanded="True">
+                <Node name="Commands" expanded="True" />
+                <Node name="Events" expanded="True" />
+                <Node name="Handlers" expanded="True" />
+                <Node name="Sagas" expanded="True" />
+              </Node>
+              <Node name="Service2.Domain" expanded="True">
+                <Node name="Models" expanded="True" />
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Service2.Infrastructure" expanded="True">
+                <Node name="Repositories" expanded="True" />
+              </Node>
+              <Node name="Service2.Web" expanded="True" />
+            </Node>
+            <Node name="Service3" expanded="True">
+              <Node name="Service3.Application">
                 <Node name="Handlers" expanded="True" />
               </Node>
             </Node>
-            <Node name="Service3" expanded="True" />
           </Node>
         </State>
       </Pad>

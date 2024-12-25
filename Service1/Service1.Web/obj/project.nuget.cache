@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O4fIpOMmGQj4IJmP1a/kVMydlYmfcMKf68D61nPGIANl7qmWlmqiN5hWFnIdOOGe7V6z79s54NDedtouMK0mDQ==",
+  "dgSpecHash": "xcia7cWi8fk=",
   "success": true,
   "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/Service1.Web.csproj",
   "expectedPackageFiles": [
@@ -57,6 +57,7 @@
     "/Users/roed/.nuget/packages/nservicebus.extensions.hosting/3.0.0/nservicebus.extensions.hosting.3.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/nservicebus.messageinterfaces/1.0.0/nservicebus.messageinterfaces.1.0.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/nservicebus.newtonsoft.json/4.0.0/nservicebus.newtonsoft.json.4.0.0.nupkg.sha512",
+    "/Users/roed/.nuget/packages/nservicebus.persistence.sql/8.1.0/nservicebus.persistence.sql.8.1.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/pomelo.entityframeworkcore.mysql/8.0.2/pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore/7.2.0/swashbuckle.aspnetcore.7.2.0.nupkg.sha512",
     "/Users/roed/.nuget/packages/swashbuckle.aspnetcore.annotations/7.2.0/swashbuckle.aspnetcore.annotations.7.2.0.nupkg.sha512",
