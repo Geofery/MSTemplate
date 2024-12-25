@@ -15,10 +15,31 @@ namespace Infrastructure.Repositories
         {
             base.OnModelCreating(modelBuilder);
 
+            
+            modelBuilder.Entity<Order>(entity =>
+            {
+                entity.HasKey(o => o.OrderId); 
+                entity.Property(o => o.UserId).IsRequired(); 
 
-            modelBuilder.Entity<Order>()
-                .HasKey(m => m.OrderId);
-            modelBuilder.Entity<Product>().HasKey(m => m.ProductId);
+                // Define One-to-Many relationship with Product
+                entity.HasMany(o => o.Products)
+                      .WithOne(p => p.Order)
+                      .HasForeignKey(p => p.OrderId)
+                      .OnDelete(DeleteBehavior.Cascade); 
+            });
+
+            
+            modelBuilder.Entity<Product>(entity =>
+            {
+                entity.HasKey(p => p.ProductId); 
+                entity.Property(p => p.Quantity).IsRequired(); 
+
+            
+                entity.HasOne(p => p.Order)
+                      .WithMany(o => o.Products)
+                      .HasForeignKey(p => p.OrderId)
+                      .OnDelete(DeleteBehavior.Cascade);
+            });
         }
     }
 }
