@@ -1,5 +1,4 @@
-﻿using Application.Commands;
-using Application.Events;
+﻿using SharedMessages;
 using Domain.Repositories;
 using NServiceBus;
 
@@ -17,17 +16,17 @@ public class ValidateUserHandler : IHandleMessages<ValidateUser>
 
     public async Task Handle(ValidateUser message, IMessageHandlerContext context)
     {
-        var isValid = await _userRepository.ValidateUserAsync(message.UserId);
-        if (isValid)
+        var isValid = await _userRepository.ValidateUserAsync(message.Email);
+        if (isValid != Guid.Empty)
         {
-            await context.Publish(new UserValidated { UserId = message.UserId });
+            await context.Publish(new UserValidated { UserId = isValid });
         }
         else
         {
             await context.Publish(new UserValidationFailed
             {
-                UserId = message.UserId,
-                Reason = "Invalid user or address."
+                UserId = isValid,
+                Reason = "User not in system"
             });
         }
     }

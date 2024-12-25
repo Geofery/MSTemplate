@@ -33,7 +33,7 @@ namespace Infrastructure.Repositories
         {
             await _dbContext.Users.AddAsync(user);
             await _dbContext.SaveChangesAsync();
-            var result = await _dbContext.Users.FindAsync(user.LeadId);
+            var result = await _dbContext.Users.FindAsync(user.UserId);
             if (result == null)
             {
                 throw new Exception("User not saved or found");
@@ -41,10 +41,14 @@ namespace Infrastructure.Repositories
             return result;
         }
 
-        public Task<bool> ValidateUserAsync(Guid userId)
+        public async Task<Guid> ValidateUserAsync(string email)
         {
-            //TODO Simulate user validation logic.
-            return Task.FromResult(true);
+            var result = await _dbContext.Users.FindAsync(email);
+            if (result == null)
+            {
+                return Guid.Empty;
+            }
+            return result.UserId;
         }
 
         public async Task<bool> HelthCheck()

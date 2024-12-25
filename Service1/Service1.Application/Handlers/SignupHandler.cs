@@ -1,7 +1,5 @@
 ﻿using System;
 using NServiceBus;
-using Application.Commands;
-using Application.Events;
 using Domain.Models;
 using Domain.Repositories;
 using SharedMessages;
@@ -26,7 +24,8 @@ namespace Application.Handlers
             new Address(new Guid(), message.Street, message.City, message.PostalCode));
         var result = await _userRepository.SaveMemberAsync(signup).ConfigureAwait(false);
 
-        var signupCompleted = new SharedMessages.SignupCompleted(result.LeadId, result.Name, result.Email, result.Password);
+        var signupCompleted = new SignupCompleted(result.UserId, result.Name, result.Email,
+            result.Password, result.Address.Id, result.Address.Street, result.Address.City, result.Address.PostalCode);
         _logger.LogInformation($"Message published from UserManagement{message}");
         await context.Publish(signupCompleted).ConfigureAwait(false);
     }
