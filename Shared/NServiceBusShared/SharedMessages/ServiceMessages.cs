@@ -64,12 +64,14 @@
     {
         public Guid PaymentId { get; set; }
         public Guid OrderId { get; set; }
+        public decimal Amount { get; set; }
     }
 
     public class PaymentFailed : IEvent
     {
         public Guid PaymentId { get; set; }
         public Guid OrderId { get; set; }
+        public decimal Amount { get; set; }
         public string Reason { get; set; }
     }
 
@@ -86,5 +88,10 @@
 
 
     //____________________________OrderService Commands____________________________//
-
+    public class CancelOrder : ICommand
+    {
+        public Guid OrderId { get; set; }
+        public Guid PaymentId { get; set; }
+        public string Reason { get; set; }
+    }
 }

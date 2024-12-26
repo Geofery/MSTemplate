@@ -2,6 +2,7 @@
 using Application.Events;
 using SharedMessages;
 using Application.Commands;
+using Domain.Models;
 
 namespace Application.Sagas;
 
@@ -46,7 +47,6 @@ public class OrderSaga : Saga<OrderSagaData>,
     {
         //TODO: Add logger
         Console.WriteLine($"{message.Reason}: Creating new user.");
-        // User doesn't exist, create a new user
         await context.Send(new SignupCommand
         {
             Name = Data.Name,
@@ -67,6 +67,19 @@ public class OrderSaga : Saga<OrderSagaData>,
             UserId = Data.UserId,
             OrderId = Data.OrderId,
             Products = Data.Products,
+        });
+    }
+
+    public async Task Handle(SaveOrderCompleted message, IMessageHandlerContext context)
+    {
+        Console.WriteLine("Order saved successfully. Initiating payment process.");
+        Data.ProductsConverted = message.Products;
+        // Send a command to PaymentService to process the payment
+        //TODO: Needs updated Products list in Data. 
+        await context.Send(new ProcessPayment
+        {
+            OrderId = Data.OrderId,
+            Amount = CalculateOrderAmount(Data.ProductsConverted), // Implement this method to calculate the total amount
         });
     }
 
@@ -104,10 +117,23 @@ public class OrderSaga : Saga<OrderSagaData>,
     protected override void ConfigureHowToFindSaga(SagaPropertyMapper<OrderSagaData> mapper)
     {
         mapper.MapSaga(saga => saga.OrderId)
-              .ToMessage<PlaceOrder>(message => message.OrderId)
-              .ToMessage<UserValidationFailed>(message => message.OrderId)
-              .ToMessage<UserValidated>(message => message.OrderId)
-              .ToMessage<PaymentProcessed>(message => message.OrderId)
-              .ToMessage<PaymentFailed>(message => message.OrderId);
-}
+            .ToMessage<PlaceOrder>(message => message.OrderId)
+            .ToMessage<UserValidationFailed>(message => message.OrderId)
+            .ToMessage<UserValidated>(message => message.OrderId)
+            .ToMessage<SaveOrderCompleted>(message => message.OrderId)
+            .ToMessage<PaymentProcessed>(message => message.OrderId)
+            .ToMessage<PaymentFailed>(message => message.OrderId);
+    }
+
+    private decimal CalculateOrderAmount(List<Product> products)
+    {
+        decimal sum = 0;
+        Random r = new Random();
+
+        foreach (var product in products)
+        {
+            sum += product.Quantity * r.NextInt64(100) + 1;
+        }
+        return sum;
+    }
 }

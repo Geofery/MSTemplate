@@ -1,7 +1,5 @@
-﻿using Application.Commands;
-using Application.Events;
-using NServiceBus;
-
+﻿using NServiceBus;
+using SharedMessages;
 
 namespace Application.Handlers
 {
@@ -14,15 +12,22 @@ namespace Application.Handlers
 
             if (isPaymentSuccessful)
             {
-                await context.Publish(new PaymentProcessed { OrderId = message.OrderId });
+                await context.Publish(new PaymentProcessed
+                {
+                    OrderId = message.OrderId,
+                    PaymentId = new Guid(),
+                    Amount = message.Amount
+                }) ;
             }
             else
             {
                 await context.Publish(new PaymentFailed
                 {
                     OrderId = message.OrderId,
+                    PaymentId = new Guid(),
+                    Amount = message.Amount,
                     Reason = "Payment processing failed."
-                });
+                }) ;
             }
         }
     }

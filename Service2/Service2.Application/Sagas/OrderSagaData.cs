@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Models;
 using NServiceBus.Persistence.Sql;
 
 namespace Application.Sagas;
@@ -16,5 +17,7 @@ public class OrderSagaData : ContainSagaData
     public string City { get; set; }
     public string PostalCode { get; set; }
     public List<(Guid Ids, int Quantity)> Products { get; set; }
+    public List<Product> ProductsConverted { get; set; }
+    //TODO: Change Data to List<Product> Products....
 }
 

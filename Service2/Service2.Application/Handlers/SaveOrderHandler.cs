@@ -4,6 +4,7 @@ using SharedMessages;
 using Domain.Repositories;
 using Domain.Models;
 using Microsoft.Extensions.Logging;
+using Application.Events;
 
 namespace Application.Handlers
 {
@@ -37,7 +38,11 @@ namespace Application.Handlers
             }
 
             _logger.LogInformation("Order saved succesfully: {order}", order);
-            //TODO: Return order? 
+            await context.Publish(new SaveOrderCompleted
+            {
+                OrderId = message.OrderId,
+                Products = products
+            });
         }
     }
 }

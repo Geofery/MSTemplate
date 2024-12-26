@@ -1,5 +1,6 @@
 ﻿using Domain.Models;
 using Domain.Repositories;
+using SharedMessages;
 
 namespace Infrastructure.Repositories;
 
@@ -22,4 +23,11 @@ public class OrderRepository : IOrderRepository
         }
         return result;
     }
+
+    public Task<CancelOrder> CancelOrder()
+    {
+        //TODO: Implement - updates the order with reason for order not completed.
+        throw new NotImplementedException();
+    }
 }
+
