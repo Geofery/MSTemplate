@@ -13,5 +13,7 @@
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Models\" />
+    <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
+
   </ItemGroup>
 </Project>

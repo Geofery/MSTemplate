@@ -30,5 +30,4 @@ namespace Application.Handlers
         await context.Publish(signupCompleted).ConfigureAwait(false);
     }
 }
-
 }

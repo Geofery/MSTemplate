@@ -19,5 +19,7 @@
   <ItemGroup>
     <PackageReference Include="NServiceBus" Version="9.2.3" />
     <ProjectReference Include="..\..\Shared\NServiceBusShared\SharedMessages\SharedMessages.csproj" />
+    <ProjectReference Include="../Service3.Domain/Service3.Domain.csproj" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
   </ItemGroup>
 </Project>

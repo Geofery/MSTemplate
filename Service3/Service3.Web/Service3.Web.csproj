@@ -21,10 +21,4 @@
     <ProjectReference Include="../Service3.Infrastructure/Service3.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Handlers\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handlers\" />
-  </ItemGroup>
 </Project>

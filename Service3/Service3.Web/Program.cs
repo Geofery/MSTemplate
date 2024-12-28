@@ -1,3 +1,5 @@
+using Domain.Repositories;
+using Infrastructure.Repositories;
 using Microsoft.OpenApi.Models;
 using SharedMessages;
 
@@ -22,6 +24,7 @@ builder.WebHost.UseUrls("http://localhost:5003");
 
 
 // Add services to the container
+builder.Services.AddSingleton<IPaymentRepository, PaymentRepository>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>

@@ -43,7 +43,6 @@ namespace Web
                     PostalCode = model.PostalCode,
                     Products = model.Products
                 };
-     
 
                 await _messageSession.SendLocal(command).ConfigureAwait(false);
                 _logger.LogInformation("OrderService successfully send: {command}", command);

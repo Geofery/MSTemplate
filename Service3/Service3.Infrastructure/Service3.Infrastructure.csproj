@@ -14,4 +14,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Service3.Domain/Service3.Domain.csproj" />
+    <Folder Include="Repositories\" />
+  </ItemGroup>
 </Project>

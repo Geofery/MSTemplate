@@ -25,7 +25,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +42,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "NServiceBus": {
               "target": "Package",
               "version": "[9.2.3, )"

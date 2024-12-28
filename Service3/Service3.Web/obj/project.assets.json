@@ -1400,7 +1400,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "NServiceBus": "9.2.3"
+          "Microsoft.Extensions.Logging": "8.0.1",
+          "NServiceBus": "9.2.3",
+          "SharedMessages": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Service3.Application.dll": {}
