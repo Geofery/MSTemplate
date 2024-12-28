@@ -3,11 +3,11 @@
     //____________________________UserManagement Events____________________________//
     public class SignupCompleted : IEvent
     {
-        public SignupCompleted(Guid leadId, string name, string email,
+        public SignupCompleted(Guid userId, string name, string email,
             string password, Guid addressId, string street, string city,
             string postalCode, Guid orderId)
         {
-            UserId = leadId;
+            UserId = userId;
             Name = name;
             Email = email;
             Password = password;
