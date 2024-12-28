@@ -1,139 +1,205 @@
-﻿using NServiceBus;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using NServiceBus;
 using Application.Events;
 using SharedMessages;
 using Application.Commands;
 using Domain.Models;
+using Microsoft.Extensions.Logging;
 
-namespace Application.Sagas;
-
-public class OrderSaga : Saga<OrderSagaData>,
-    IAmStartedByMessages<PlaceOrder>,
-    IHandleMessages<UserValidated>,
-    IHandleMessages<UserValidationFailed>,
-    IHandleMessages<SignupCompleted>,
-    IHandleMessages<PaymentProcessed>,
-    IHandleMessages<PaymentFailed>
+namespace Application.Sagas
 {
-    //TODO: Add missing handlers
-    public async Task Handle(PlaceOrder message, IMessageHandlerContext context)
+    public class OrderSaga : Saga<OrderSagaData>,
+        IAmStartedByMessages<PlaceOrder>,
+        IHandleMessages<UserValidated>,
+        IHandleMessages<UserValidationFailed>,
+        IHandleMessages<SignupCompleted>,
+        IHandleMessages<SaveOrderCompleted>,
+        IHandleMessages<PaymentProcessed>,
+        IHandleMessages<PaymentFailed>
     {
-        Console.WriteLine("In Saga PlaceOrder");
-        Data.OrderId = message.OrderId;
-        Data.Name = message.Name;
-        Data.Email = message.Email;
-        Data.Password = message.Password;
-        Data.Street = message.Street;
-        Data.City = message.City;
-        Data.PostalCode = message.PostalCode;
-        Data.Products = message.Products;
+        private readonly ILogger<OrderSaga> _logger;
 
-        // Request user validation
-        await context.Send(new ValidateUser { Email = Data.Email });
-    }
-
-    public async Task Handle(UserValidated message, IMessageHandlerContext context)
-    {
-        Data.UserId = message.UserId;
-
-        // Proceed to save the order
-        await context.Send(new SaveOrder
+        public OrderSaga(ILogger<OrderSaga> logger)
         {
-            UserId = Data.UserId,
-            Products = Data.Products
-        });
-    }
-
-    public async Task Handle(UserValidationFailed message, IMessageHandlerContext context)
-    {
-        //TODO: Add logger
-        Console.WriteLine($"{message.Reason}: Creating new user.");
-        await context.Send(new SignupCommand
-        {
-            Name = Data.Name,
-            OrderId = Data.OrderId,
-            Email = Data.Email,
-            Password = Data.Password,
-            Street = Data.Street,
-            City = Data.City,
-            PostalCode = Data.PostalCode
-        });
-    }
-
-    public async Task Handle(SignupCompleted message, IMessageHandlerContext context)
-    {
-        Data.UserId = message.UserId;
-        await context.Send(new SaveOrder
-        {
-            UserId = Data.UserId,
-            OrderId = Data.OrderId,
-            Products = Data.Products,
-        });
-    }
-
-    public async Task Handle(SaveOrderCompleted message, IMessageHandlerContext context)
-    {
-        Console.WriteLine("Order saved successfully. Initiating payment process.");
-        Data.ProductsConverted = message.Products;
-        // Send a command to PaymentService to process the payment
-        //TODO: Needs updated Products list in Data. 
-        await context.Send(new ProcessPayment
-        {
-            OrderId = Data.OrderId,
-            Amount = CalculateOrderAmount(Data.ProductsConverted), // Implement this method to calculate the total amount
-        });
-    }
-
-    public async Task Handle(PaymentProcessed message, IMessageHandlerContext context)
-    {
-        Data.PaymentId = message.PaymentId;
-
-        // Mark the saga as complete
-        //TODO: Create OrderCompletedHandler
-        MarkAsComplete();
-        await context.Publish(new OrderCompleted
-        {
-            OrderId = Data.OrderId,
-            PaymentId = Data.PaymentId
-        });
-    }
-
-    public async Task Handle(PaymentFailed message, IMessageHandlerContext context)
-    {
-        Data.PaymentId = message.PaymentId;
-
-        // Log the reason for failure or perform other
-        //TODO: Create CancelOrderHandler
-        await context.Send(new CancelOrder
-        {
-            OrderId = Data.OrderId,
-            PaymentId = Data.PaymentId,
-            Reason = message.Reason
-        });
-
-        // Mark the saga as complete
-        MarkAsComplete();
-    }
-
-    protected override void ConfigureHowToFindSaga(SagaPropertyMapper<OrderSagaData> mapper)
-    {
-        mapper.MapSaga(saga => saga.OrderId)
-            .ToMessage<PlaceOrder>(message => message.OrderId)
-            .ToMessage<UserValidationFailed>(message => message.OrderId)
-            .ToMessage<UserValidated>(message => message.OrderId)
-            .ToMessage<SaveOrderCompleted>(message => message.OrderId)
-            .ToMessage<PaymentProcessed>(message => message.OrderId)
-            .ToMessage<PaymentFailed>(message => message.OrderId);
-    }
-
-    private decimal CalculateOrderAmount(List<Product> products)
-    {
-        decimal sum = 0;
-        Random r = new Random();
-
-        foreach (var product in products)
-        {
-            sum += product.Quantity * r.NextInt64(100) + 1;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
-        return sum;
+
+        public async Task Handle(PlaceOrder message, IMessageHandlerContext context)
+        {
+            _logger.LogInformation("Handling PlaceOrder. OrderId: {OrderId}, Email: {Email}", message.OrderId, message.Email);
+
+            Data.OrderId = message.OrderId;
+            Data.Name = message.Name;
+            Data.Email = message.Email;
+            Data.Password = message.Password;
+            Data.Street = message.Street;
+            Data.City = message.City;
+            Data.PostalCode = message.PostalCode;
+            Data.Products = message.Products;
+
+            try
+            {
+                await context.Send(new ValidateUser { Email = Data.Email });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending ValidateUser command for OrderId: {OrderId}", message.OrderId);
+                throw;
+            }
+        }
+
+        public async Task Handle(UserValidated message, IMessageHandlerContext context)
+        {
+            _logger.LogInformation("UserValidated received. UserId: {UserId}, OrderId: {OrderId}", message.UserId, Data.OrderId);
+
+            Data.UserId = message.UserId;
+
+            try
+            {
+                await context.Send(new SaveOrder
+                {
+                    UserId = Data.UserId,
+                    OrderId = Data.OrderId,
+                    Products = Data.Products
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending SaveOrder command for OrderId: {OrderId}", Data.OrderId);
+                throw;
+            }
+        }
+
+        public async Task Handle(UserValidationFailed message, IMessageHandlerContext context)
+        {
+            _logger.LogWarning("User validation failed. Reason: {Reason}, OrderId: {OrderId}", message.Reason, Data.OrderId);
+
+            try
+            {
+                await context.Send(new SignupCommand
+                {
+                    Name = Data.Name,
+                    Email = Data.Email,
+                    Password = Data.Password,
+                    Street = Data.Street,
+                    City = Data.City,
+                    PostalCode = Data.PostalCode,
+                    OrderId = Data.OrderId
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending SignupCommand for OrderId: {OrderId}", Data.OrderId);
+                throw;
+            }
+        }
+
+        public async Task Handle(SignupCompleted message, IMessageHandlerContext context)
+        {
+            _logger.LogInformation("SignupCompleted received. UserId: {UserId}, OrderId: {OrderId}", message.UserId, Data.OrderId);
+
+            Data.UserId = message.UserId;
+
+            try
+            {
+                await context.Send(new SaveOrder
+                {
+                    UserId = Data.UserId,
+                    OrderId = Data.OrderId,
+                    Products = Data.Products
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending SaveOrder command for OrderId: {OrderId}", Data.OrderId);
+                throw;
+            }
+        }
+
+        public async Task Handle(SaveOrderCompleted message, IMessageHandlerContext context)
+        {
+            _logger.LogInformation("SaveOrderCompleted received. OrderId: {OrderId}", Data.OrderId);
+
+            Data.ProductsConverted = message.Products;
+
+            try
+            {
+                await context.Send(new ProcessPayment
+                {
+                    OrderId = Data.OrderId,
+                    Amount = CalculateOrderAmount(Data.ProductsConverted)
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending ProcessPayment command for OrderId: {OrderId}", Data.OrderId);
+                throw;
+            }
+        }
+
+        public async Task Handle(PaymentProcessed message, IMessageHandlerContext context)
+        {
+            _logger.LogInformation("PaymentProcessed received. PaymentId: {PaymentId}, OrderId: {OrderId}", message.PaymentId, Data.OrderId);
+
+            Data.PaymentId = message.PaymentId;
+
+            await context.Publish(new OrderCompleted
+            {
+                OrderId = Data.OrderId,
+                PaymentId = Data.PaymentId
+            });
+
+            MarkAsComplete();
+        }
+
+        public async Task Handle(PaymentFailed message, IMessageHandlerContext context)
+        {
+            _logger.LogWarning("PaymentFailed received. Reason: {Reason}, OrderId: {OrderId}", message.Reason, Data.OrderId);
+
+            Data.PaymentId = message.PaymentId;
+
+            try
+            {
+                await context.Send(new CancelOrder
+                {
+                    OrderId = Data.OrderId,
+                    PaymentId = Data.PaymentId,
+                    Reason = message.Reason
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error sending CancelOrder command for OrderId: {OrderId}", Data.OrderId);
+                throw;
+            }
+
+            MarkAsComplete();
+        }
+
+        protected override void ConfigureHowToFindSaga(SagaPropertyMapper<OrderSagaData> mapper)
+        {
+            mapper.MapSaga(saga => saga.OrderId)
+                .ToMessage<PlaceOrder>(message => message.OrderId)
+                .ToMessage<UserValidated>(message => message.OrderId)
+                .ToMessage<UserValidationFailed>(message => message.OrderId)
+                .ToMessage<SignupCompleted>(message => message.OrderId)
+                .ToMessage<SaveOrderCompleted>(message => message.OrderId)
+                .ToMessage<PaymentProcessed>(message => message.OrderId)
+                .ToMessage<PaymentFailed>(message => message.OrderId);
+        }
+
+        private decimal CalculateOrderAmount(List<Product> products)
+        {
+            decimal total = 0;
+
+            foreach (var product in products)
+            {
+                total += product.Quantity * 10; // Example static price multiplier
+            }
+
+            return total;
+        }
     }
 }

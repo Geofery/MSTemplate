@@ -1,8 +1,11 @@
 ﻿using System;
-namespace Service3.Domain.Repositories
+namespace Domain.Repositories
 {
 	public interface IPaymentRepository
 	{
-	}
-}
+            Task<bool> ProcessPaymentAsync(Guid orderId, decimal amount);
+            Task CancelPaymentAsync(Guid paymentId);
+        }
+    }
+
 
