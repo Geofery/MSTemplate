@@ -31,11 +31,19 @@ namespace Application.Handlers
                 };
 
                 payment = await _paymentRepository.ProcessPaymentAsync(payment);
+                await PublishMessage(context, payment);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while processing payment for OrderId: {OrderId}, Amount: {Amount}", message.OrderId, message.Amount);
+                throw;
+            }
 
-
+            async Task PublishMessage(IMessageHandlerContext context, Payment payment)
+            {
                 if (payment.Reason == "Processed")
                 {
-                    _logger.LogInformation("Payment processed successfully. OrderId: {OrderId}, PaymentId: {PaymentId}", message.OrderId, payment.Id);
+                    _logger.LogInformation("Payment processed successfully. OrderId: {OrderId}, PaymentId: {PaymentId}", payment.OrderId, payment.Id);
                     await context.Publish(new PaymentProcessed
                     {
                         OrderId = message.OrderId,
@@ -44,12 +52,11 @@ namespace Application.Handlers
                         Reason = payment.Reason,
                         Status = payment.Status
                     });
-
                 }
 
                 else
                 {
-                    _logger.LogWarning("Payment processing failed. OrderId: {OrderId}, Amount: {Amount}", message.OrderId, message.Amount);
+                    _logger.LogWarning("Payment processing failed. OrderId: {OrderId}, Amount: {Amount}", payment.OrderId, message.Amount);
 
                     await context.Publish(new PaymentFailed
                     {
@@ -60,11 +67,6 @@ namespace Application.Handlers
                         Reason = payment.Reason
                     });
                 }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while processing payment for OrderId: {OrderId}, Amount: {Amount}", message.OrderId, message.Amount);
-                throw;
             }
         }
     }
