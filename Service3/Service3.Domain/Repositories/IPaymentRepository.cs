@@ -3,7 +3,7 @@ namespace Domain.Repositories
 {
 	public interface IPaymentRepository
 	{
-            Task<bool> ProcessPaymentAsync(Guid orderId, decimal amount);
+            Task<Payment> ProcessPaymentAsync(Payment payment);
             Task CancelPaymentAsync(Guid paymentId);
             Task<bool> HealthCheckAsync();
 

@@ -2,6 +2,7 @@
 using SharedMessages;
 using Microsoft.Extensions.Logging;
 using Domain.Repositories;
+using Domain;
 
 namespace Application.Handlers
 {
@@ -22,33 +23,41 @@ namespace Application.Handlers
 
             try
             {
-                var isPaymentSuccessful = await _paymentRepository.ProcessPaymentAsync(message.OrderId, message.Amount);
-
-                if (isPaymentSuccessful)
+                var payment = new Payment
                 {
-                    var paymentId = Guid.NewGuid();
+                    Id = Guid.NewGuid(),
+                    OrderId = message.OrderId,
+                    Amount = message.Amount,
+                };
 
-                    _logger.LogInformation("Payment processed successfully. OrderId: {OrderId}, PaymentId: {PaymentId}", message.OrderId, paymentId);
+                payment = await _paymentRepository.ProcessPaymentAsync(payment);
 
+
+                if (payment.Reason == "Processed")
+                {
+                    _logger.LogInformation("Payment processed successfully. OrderId: {OrderId}, PaymentId: {PaymentId}", message.OrderId, payment.Id);
                     await context.Publish(new PaymentProcessed
                     {
                         OrderId = message.OrderId,
-                        PaymentId = paymentId,
-                        Amount = message.Amount
+                        PaymentId = payment.Id,
+                        Amount = payment.Amount,
+                        Reason = payment.Reason,
+                        Status = payment.Status
                     });
+
                 }
+
                 else
                 {
-                    var paymentId = Guid.NewGuid();
-
                     _logger.LogWarning("Payment processing failed. OrderId: {OrderId}, Amount: {Amount}", message.OrderId, message.Amount);
 
                     await context.Publish(new PaymentFailed
                     {
-                        OrderId = message.OrderId,
-                        PaymentId = paymentId,
-                        Amount = message.Amount,
-                        Reason = "Payment processing failed, not enough funds."
+                        OrderId = payment.OrderId,
+                        PaymentId = payment.Id,
+                        Amount = payment.Amount,
+                        Status = payment.Status,
+                        Reason = payment.Reason
                     });
                 }
             }

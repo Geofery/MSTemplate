@@ -18,42 +18,44 @@ namespace Infrastructure.Repositories
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public async Task<bool> ProcessPaymentAsync(Guid orderId, decimal amount)
+        public async Task<Payment> ProcessPaymentAsync(Payment payment)
         {
-            if (orderId == Guid.Empty)
+            if (payment.OrderId == Guid.Empty)
             {
-                throw new ArgumentException("OrderId cannot be empty.", nameof(orderId));
+                throw new ArgumentException("OrderId cannot be empty.", nameof(payment.OrderId));
             }
 
-            if (amount <= 0)
+            if (payment.Amount <= 0)
             {
-                throw new ArgumentException("Payment amount must be greater than zero.", nameof(amount));
+                throw new ArgumentException("Payment amount must be greater than zero.", nameof(payment.Amount));
             }
 
             try
             {
+                
                 // Simulate payment processing
                 var isPaymentSuccessful = new Random().Next(2) == 0;
-                var payment = new Payment
-                {
-                    Id = Guid.NewGuid(),
-                    OrderId = orderId,
-                    Amount = amount,
-                    Status = isPaymentSuccessful ? "Processed" : "Failed"
-                };
+                payment.Status = isPaymentSuccessful ? "Processed" : "Failed";
+                payment.Reason = isPaymentSuccessful ? "Sufficient funds" : "Insufficient funds";
 
-                await _dbContext.Payments.AddAsync(payment);
+                var result = await _dbContext.Payments.AddAsync(payment);
                 await _dbContext.SaveChangesAsync();
 
-                _logger.LogInformation("Payment {Status} for OrderId: {OrderId}, Amount: {Amount}",
-                    payment.Status, orderId, amount);
+                if(result.Entity is null)
+                {
+                    _logger.LogWarning("Payment with ID: {PaymentId} not found.", payment.Id);
+                    throw new KeyNotFoundException($"Payment with ID: {payment.Id} not found.");
+                }
 
-                return isPaymentSuccessful;
+                _logger.LogInformation("Payment {Status} for OrderId: {OrderId}, Amount: {Amount}",
+                    payment.Status, payment.OrderId, payment.Amount);
+
+                return result.Entity;
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing payment. OrderId: {OrderId}, Amount: {Amount}",
-                    orderId, amount);
+                    payment.OrderId, payment.Amount);
                 throw new Exception("Payment processing failed.", ex);
             }
         }

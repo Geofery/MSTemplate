@@ -21,12 +21,13 @@
             Reason = reason;
         }
 
-        public Order(Guid orderId, Guid paymentId, string status, string reason)
+        public Order(Guid orderId, Guid paymentId, string status, string reason, decimal amount)
         {
             OrderId = orderId;
             PaymentId = paymentId;
             Status = status;
             Reason = reason;
+            Amount = amount;
         }
 
         public Guid OrderId { get; set; }
@@ -35,5 +36,6 @@
         public Guid PaymentId { get; set; }
         public string Status { get; set; } // "Processed" or "Failed"
         public string Reason { get; set; }
+        public decimal Amount { get; set; }
     }
 }

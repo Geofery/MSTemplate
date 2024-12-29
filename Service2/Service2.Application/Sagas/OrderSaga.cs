@@ -146,13 +146,13 @@ namespace Application.Sagas
             Data.PaymentId = message.PaymentId;
             _logger.LogInformation("PAYMENT PROCESSED!!!! PAYMENTID: {paymentId}", message.PaymentId);
 
-            //TODO: DENNE GØR INTET, DER ER IKKE NOGEN DER LYTTER PÅ ORDERCOMPLETED
-            await context.Publish(new OrderCompleted
+            await context.Send(new UpdateOrderPaymentStatus
             {
                 OrderId = Data.OrderId,
-                PaymentId = Data.PaymentId
+                PaymentId = Data.PaymentId,
+                Status = "Processed",
+                Reason = "Sufficient funds"
             });
-            //TODO: Opdater Database med PaymentId..... 
 
             MarkAsComplete();
         }
@@ -171,6 +171,14 @@ namespace Application.Sagas
                 {
                     OrderId = Data.OrderId,
                     PaymentId = Data.PaymentId,
+                    Reason = message.Reason
+                });
+
+                await context.Send(new UpdateOrderPaymentStatus
+                {
+                    OrderId = Data.OrderId,
+                    PaymentId = Data.PaymentId,
+                    Status = "Failed",
                     Reason = message.Reason
                 });
             }
