@@ -150,8 +150,9 @@ namespace Application.Sagas
             {
                 OrderId = Data.OrderId,
                 PaymentId = Data.PaymentId,
-                Status = "Processed",
-                Reason = "Sufficient funds"
+                Status = message.Status,
+                Reason = message.Reason,
+                Amount = message.Amount
             });
 
             MarkAsComplete();
@@ -162,24 +163,18 @@ namespace Application.Sagas
             _logger.LogWarning("PaymentFailed received. Reason: {Reason}, OrderId: {OrderId}", message.Reason, Data.OrderId);
 
             Data.PaymentId = message.PaymentId;
-            _logger.LogInformation("PAYMENT FAILED!!!! PAYMENTID: {paymentId}", message.PaymentId);
+            _logger.LogInformation("PAYMENT FAILED IN SAGA!!!! PAYMENTID: {paymentId}", message.PaymentId);
             try
             {
                 _logger.LogInformation("CANCEL ORDER!!!! PAYMENTID: {paymentId}, REASON {reason}", message.PaymentId, message.Reason);
-
-                await context.Send(new CancelOrder
-                {
-                    OrderId = Data.OrderId,
-                    PaymentId = Data.PaymentId,
-                    Reason = message.Reason
-                });
 
                 await context.Send(new UpdateOrderPaymentStatus
                 {
                     OrderId = Data.OrderId,
                     PaymentId = Data.PaymentId,
-                    Status = "Failed",
-                    Reason = message.Reason
+                    Status = message.Status,
+                    Reason = message.Reason,
+                    Amount = message.Amount
                 });
             }
             catch (Exception ex)

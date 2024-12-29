@@ -4,7 +4,7 @@ using Domain.Repositories;
 using Microsoft.Extensions.Logging;
 using NServiceBus;
 using SharedMessages;
-
+/*
 namespace Application.Handlers
 {
     public class CancelOrderHandler : IHandleMessages<CancelOrder>
@@ -43,3 +43,4 @@ namespace Application.Handlers
         }
     }
 }
+*/

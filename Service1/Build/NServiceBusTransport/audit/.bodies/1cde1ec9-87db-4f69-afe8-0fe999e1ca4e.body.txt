@@ -1,0 +1,19 @@
+﻿{
+  "OrderId": "b68010b4-7d31-4b8f-89e8-04b7f9763b7f",
+  "Name": "John Payment",
+  "Email": "johnpayment@example.com",
+  "Password": "newsecurepassword123",
+  "Street": "123 Main Street",
+  "City": "Anytown",
+  "PostalCode": "12345",
+  "Products": [
+    {
+      "Item1": "00000000-0000-0000-0000-000000000000",
+      "Item2": 0
+    },
+    {
+      "Item1": "00000000-0000-0000-0000-000000000000",
+      "Item2": 0
+    }
+  ]
+}

@@ -49,8 +49,9 @@ builder.Host.UseNServiceBus(context =>
     routing.RouteToEndpoint(typeof(SignupCommand), "UserManagement");
     routing.RouteToEndpoint(typeof(SaveOrder), "OrderService");
     routing.RouteToEndpoint(typeof(ProcessPayment), "PaymentService");
-    routing.RouteToEndpoint(typeof(CancelOrder), "OrderService");
+    //routing.RouteToEndpoint(typeof(CancelOrder), "OrderService");
 
+    //TODO UPDATE DATABASE WITH NEW ATTRIBUTES --> Amount, Status, Reason to Order...
 
     // Configure Saga persistence
     var persistence = endpointConfiguration.UsePersistence<SqlPersistence>();

@@ -2068,7 +2068,7 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 102977536,
+    "WorkingSet": 103632896,
     "SystemPageSize": 4096,
     "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
@@ -2092,12 +2092,11 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 10,
+    "NumberOfMessagesFoundAtStartup": 9,
     "Messages": [
       "SharedMessages.PaymentProcessed",
       "SharedMessages.UserValidated",
       "SharedMessages.SignupCompleted",
-      "SharedMessages.CancelOrder",
       "SharedMessages.SignupCommand",
       "Application.Events.SignupCompleted",
       "SharedMessages.ValidateUser",

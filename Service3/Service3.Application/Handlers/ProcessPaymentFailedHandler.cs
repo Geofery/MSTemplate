@@ -18,6 +18,7 @@ namespace Application.Handlers
 
         public async Task Handle(PaymentFailed message, IMessageHandlerContext context)
         {
+            _logger.LogInformation("IN PROCESSPAYMENTFAILEDHANDLER");
             _logger.LogWarning("Payment failed for OrderId: {OrderId}, PaymentId: {PaymentId}, Reason: {Reason}",
                 message.OrderId, message.PaymentId, message.Reason);
 
