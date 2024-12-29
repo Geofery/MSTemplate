@@ -8,7 +8,8 @@ namespace Domain.Repositories
 	{
 		Task<Order> SaveOrderAsync(Order order);
 		Task<Order> CancelOrderAsync(CancelOrder cancelOrder);
-
+        Task<Order> UpdateOrderAsync(Order order);
+        Task<bool> HealthCheckAsync();
     }
 }
 

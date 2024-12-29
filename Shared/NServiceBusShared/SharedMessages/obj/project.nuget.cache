@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UQkuCvn7mF31fYmdd0CS/5rqzmID0SDOU0maPrIPpnvN604avX87KPbRXgg/uq+9FGekYvCxb9otx/gZB7m71Q==",
+  "dgSpecHash": "eKLHWGV/IiQ=",
   "success": true,
   "projectFilePath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj",
   "expectedPackageFiles": [

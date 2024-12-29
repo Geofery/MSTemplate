@@ -5,7 +5,9 @@ namespace Domain.Repositories
 	{
             Task<bool> ProcessPaymentAsync(Guid orderId, decimal amount);
             Task CancelPaymentAsync(Guid paymentId);
-        }
+            Task<bool> HealthCheckAsync();
+
     }
+}
 
 

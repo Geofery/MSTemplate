@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace Domain.Models
 {
@@ -17,6 +18,7 @@ namespace Domain.Models
 
         // Foreign key for the Order
         public Guid OrderId { get; set; }
+        [JsonIgnore] // Prevent circular reference during serialization
         public Order Order { get; set; } // Navigation property
     }
 }

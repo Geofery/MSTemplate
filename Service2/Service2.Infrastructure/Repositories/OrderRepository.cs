@@ -1,4 +1,5 @@
-﻿using Domain.Models;
+﻿using System.Net.NetworkInformation;
+using Domain.Models;
 using Domain.Repositories;
 using Microsoft.Extensions.Logging;
 using SharedMessages;
@@ -69,5 +70,60 @@ public class OrderRepository : IOrderRepository
             throw new Exception("An error occurred while canceling the order.", ex);
         }
     }
+
+    public async Task<bool> HealthCheckAsync()
+    {
+        try
+        {
+            var canConnect = await _dbContext.Database.CanConnectAsync();
+            _logger.LogInformation("OrderService Database connectivity check: {Status}", canConnect ? "Success" : "Failure");
+            return canConnect;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Database connectivity health check failed.");
+            return false;
+        }
+    }
+
+    public async Task<Order> UpdateOrderAsync(Order order)
+    {
+        if (order == null)
+        {
+            throw new ArgumentNullException(nameof(order), "Order cannot be null.");
+        }
+
+        try
+        {
+            var existingOrder = await _dbContext.Orders.FindAsync(order.OrderId);
+
+            if (existingOrder == null)
+            {
+                throw new KeyNotFoundException($"Order with ID {order.OrderId} not found.");
+            }
+
+            existingOrder.PaymentId = order.PaymentId;
+            existingOrder.Status = order.Status;
+
+            if (!string.IsNullOrEmpty(order.Reason))
+            {
+                existingOrder.Reason = order.Reason;
+            }
+
+            _dbContext.Orders.Update(existingOrder);
+            await _dbContext.SaveChangesAsync();
+
+            _logger.LogInformation("Order updated successfully. OrderId: {OrderId}, PaymentId: {PaymentId}, Status: {Status}",
+                existingOrder.OrderId, existingOrder.PaymentId, existingOrder.Status);
+
+            return existingOrder;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Failed to update the order. OrderId: {OrderId}", order.OrderId);
+            throw new Exception("An error occurred while updating the order.", ex);
+        }
+    }
+
 }
 

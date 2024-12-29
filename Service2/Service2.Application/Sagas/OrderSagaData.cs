@@ -18,6 +18,5 @@ public class OrderSagaData : ContainSagaData
     public string PostalCode { get; set; }
     public List<(Guid Ids, int Quantity)> Products { get; set; }
     public List<Product> ProductsConverted { get; set; }
-    //TODO: Change Data to List<Product> Products....
 }
 

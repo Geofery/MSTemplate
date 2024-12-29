@@ -263,6 +263,9 @@
         }
       },
       "Service2.Domain/1.0.0": {
+        "dependencies": {
+          "SharedMessages": "1.0.0"
+        },
         "runtime": {
           "Service2.Domain.dll": {}
         }

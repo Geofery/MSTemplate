@@ -1,7 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Reflection.Emit;
+﻿using Microsoft.EntityFrameworkCore;
 using Domain;
-using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories
 {

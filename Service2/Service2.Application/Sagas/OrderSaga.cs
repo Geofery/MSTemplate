@@ -41,7 +41,7 @@ namespace Application.Sagas
 
             try
             {
-                await context.Send(new ValidateUser { Email = Data.Email });
+                await context.Send(new ValidateUser { Email = Data.Email, OrderId = Data.OrderId });
             }
             catch (Exception ex)
             {
@@ -144,12 +144,15 @@ namespace Application.Sagas
             _logger.LogInformation("PaymentProcessed received. PaymentId: {PaymentId}, OrderId: {OrderId}", message.PaymentId, Data.OrderId);
 
             Data.PaymentId = message.PaymentId;
+            _logger.LogInformation("PAYMENT PROCESSED!!!! PAYMENTID: {paymentId}", message.PaymentId);
 
+            //TODO: DENNE GØR INTET, DER ER IKKE NOGEN DER LYTTER PÅ ORDERCOMPLETED
             await context.Publish(new OrderCompleted
             {
                 OrderId = Data.OrderId,
                 PaymentId = Data.PaymentId
             });
+            //TODO: Opdater Database med PaymentId..... 
 
             MarkAsComplete();
         }
@@ -159,9 +162,11 @@ namespace Application.Sagas
             _logger.LogWarning("PaymentFailed received. Reason: {Reason}, OrderId: {OrderId}", message.Reason, Data.OrderId);
 
             Data.PaymentId = message.PaymentId;
-
+            _logger.LogInformation("PAYMENT FAILED!!!! PAYMENTID: {paymentId}", message.PaymentId);
             try
             {
+                _logger.LogInformation("CANCEL ORDER!!!! PAYMENTID: {paymentId}, REASON {reason}", message.PaymentId, message.Reason);
+
                 await context.Send(new CancelOrder
                 {
                     OrderId = Data.OrderId,
@@ -193,10 +198,11 @@ namespace Application.Sagas
         private decimal CalculateOrderAmount(List<Product> products)
         {
             decimal total = 0;
+            Random r = new Random();
 
             foreach (var product in products)
             {
-                total += product.Quantity * 10; // Example static price multiplier
+                total += product.Quantity * r.NextInt64(100) + 1; 
             }
 
             return total;

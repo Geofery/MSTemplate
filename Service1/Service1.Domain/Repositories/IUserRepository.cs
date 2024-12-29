@@ -7,9 +7,8 @@ namespace Domain.Repositories
 		Task<User> SaveMemberAsync(User user);
         Task<User> GetMemberByIdAsync(Guid id);
         Task<IEnumerable<User>> GetAllMembersAsync();
-        Task<bool> HealthCheckAsync();
         Task<Guid> ValidateUserAsync(String Email);
-
+        Task<bool> HealthCheckAsync();
     }
 }
 

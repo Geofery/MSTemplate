@@ -89,5 +89,20 @@ namespace Infrastructure.Repositories
                 throw new Exception("Payment cancellation failed.", ex);
             }
         }
+
+        public async Task<bool> HealthCheckAsync()
+        {
+            try
+            {
+                var canConnect = await _dbContext.Database.CanConnectAsync();
+                _logger.LogInformation("PaymentService Database connectivity check: {Status}", canConnect ? "Success" : "Failure");
+                return canConnect;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Database connectivity health check failed.");
+                return false;
+            }
+        }
     }
 }

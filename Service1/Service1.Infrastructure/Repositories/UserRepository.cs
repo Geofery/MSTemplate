@@ -101,7 +101,7 @@ namespace Infrastructure.Repositories
             try
             {
                 var canConnect = await _dbContext.Database.CanConnectAsync();
-                _logger.LogInformation("Database connectivity check: {Status}", canConnect ? "Success" : "Failure");
+                _logger.LogInformation("UserManagement Database connectivity check: {Status}", canConnect ? "Success" : "Failure");
                 return canConnect;
             }
             catch (Exception ex)

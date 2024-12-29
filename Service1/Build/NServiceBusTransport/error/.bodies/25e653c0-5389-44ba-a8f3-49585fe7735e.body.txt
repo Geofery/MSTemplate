@@ -1,0 +1,1 @@
+﻿{"PaymentId":"feffd9e3-ede4-48a9-a2df-710252398d2d","OrderId":"f59f68e7-8618-4361-a6f3-7e97befe7f70","Amount":2.0,"Reason":"Payment processing failed, not enough funds."}

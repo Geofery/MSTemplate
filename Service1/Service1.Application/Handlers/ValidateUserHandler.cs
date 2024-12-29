@@ -32,7 +32,8 @@ namespace Application.Handlers
 
                     await context.Publish(new UserValidated
                     {
-                        UserId = userId
+                        UserId = userId,
+                        OrderId = message.OrderId
                     });
                 }
                 else
@@ -42,6 +43,7 @@ namespace Application.Handlers
                     await context.Publish(new UserValidationFailed
                     {
                         UserId = Guid.Empty,
+                        OrderId = message.OrderId,
                         Reason = "User not in system"
                     });
                 }

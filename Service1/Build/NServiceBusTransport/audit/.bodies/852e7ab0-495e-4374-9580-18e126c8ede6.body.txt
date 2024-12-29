@@ -1,0 +1,1 @@
+﻿{"OrderId":"81072bf4-dd2c-48e7-888b-22c4d85c990b","Name":"Jeff","Email":"Mail","Password":"1234","Street":"Jens Larsen","City":"Ny By","PostalCode":"3450","Products":[{"Item1":"00000000-0000-0000-0000-000000000000","Item2":0}]}

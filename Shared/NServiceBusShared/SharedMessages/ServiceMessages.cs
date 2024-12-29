@@ -47,6 +47,7 @@
     public class ValidateUser : ICommand
     {
         public string Email { get; set; }
+        public Guid OrderId { get; set; }
     }
 
     public class SignupCommand : ICommand

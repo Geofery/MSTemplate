@@ -430,6 +430,9 @@
       "Service2.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SharedMessages": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Service2.Domain.dll": {}
         },

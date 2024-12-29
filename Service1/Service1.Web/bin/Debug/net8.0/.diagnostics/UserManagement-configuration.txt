@@ -10,6 +10,10 @@
         "FileVersion": "1.0.0"
       },
       {
+        "FullName": "NServiceBus.Extensions.Hosting, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
+        "FileVersion": "3.0.0"
+      },
+      {
         "FullName": "Service1.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
         "FileVersion": "1.0.0"
       },
@@ -20,10 +24,6 @@
       {
         "FullName": "NServiceBus.MessageInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
         "FileVersion": "1.0.0"
-      },
-      {
-        "FullName": "NServiceBus.Extensions.Hosting, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
-        "FileVersion": "3.0.0"
       },
       {
         "FullName": "NServiceBus.Newtonsoft.Json, Version=4.0.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c",
@@ -2058,9 +2058,9 @@
     }
   ],
   "Hosting": {
-    "HostId": "6a2dd8e0-bb76-db2e-9d51-4ea548a376e1",
-    "HostDisplayName": "MacBookPro",
-    "MachineName": "MacBookPro",
+    "HostId": "a6572630-ef78-2f1f-5b6d-74a2027d43c1",
+    "HostDisplayName": "jeffreys-mbp",
+    "MachineName": "jeffreys-mbp",
     "OSPlatform": 4,
     "OSVersion": "Unix 15.2.0",
     "IsServerGC": true,
@@ -2068,23 +2068,23 @@
     "ProcessorCount": 16,
     "Is64BitProcess": true,
     "CLRVersion": "8.0.7",
-    "WorkingSet": 92872704,
+    "WorkingSet": 102977536,
     "SystemPageSize": 4096,
-    "HostName": "MacBookPro",
+    "HostName": "jeffreys-mbp.lan",
     "UserName": "roed",
     "PathToExe": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service1/Service1.Web/bin/Debug/net8.0/Service1.Web.dll"
   },
   "Licensing": {
-    "RegisteredTo": null,
-    "LicenseType": "Trial",
+    "RegisteredTo": "Geofery10@hotmail.com",
+    "LicenseType": "Non-Production Development",
     "Edition": null,
     "Tier": null,
     "LicenseStatus": 0,
-    "LicenseLocation": "Trial License",
+    "LicenseLocation": "/Users/roed/Library/Application Support/ParticularSoftware/license.xml",
     "ValidApplications": "All",
     "CommercialLicense": false,
     "IsExpired": false,
-    "ExpirationDate": "2024-12-31T00:00:00",
+    "ExpirationDate": "2025-03-28T00:00:00Z",
     "UpgradeProtectionExpirationDate": null
   },
   "Messages": {
@@ -2092,17 +2092,18 @@
     "MessageConventions": [
       "NServiceBus Marker Interfaces"
     ],
-    "NumberOfMessagesFoundAtStartup": 9,
+    "NumberOfMessagesFoundAtStartup": 10,
     "Messages": [
-      "SharedMessages.ProcessPayment",
-      "SharedMessages.SignupCompleted",
-      "SharedMessages.PaymentFailed",
-      "Application.Events.SignupCompleted",
-      "SharedMessages.UserValidated",
       "SharedMessages.PaymentProcessed",
+      "SharedMessages.UserValidated",
+      "SharedMessages.SignupCompleted",
+      "SharedMessages.CancelOrder",
       "SharedMessages.SignupCommand",
+      "Application.Events.SignupCompleted",
+      "SharedMessages.ValidateUser",
+      "SharedMessages.PaymentFailed",
       "SharedMessages.UserValidationFailed",
-      "SharedMessages.ValidateUser"
+      "SharedMessages.ProcessPayment"
     ]
   },
   "Receiving": {

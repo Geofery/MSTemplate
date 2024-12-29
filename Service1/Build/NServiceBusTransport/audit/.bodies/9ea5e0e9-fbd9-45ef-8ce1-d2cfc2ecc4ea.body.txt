@@ -1,0 +1,1 @@
+﻿{"OrderId":"4d78716f-f5f1-4350-87b8-6d22226aa186","Name":"John Doe","Email":"johndoe@example.com","Password":"securepassword123","Street":"123 Main Street","City":"Anytown","PostalCode":"12345","Products":[{"Item1":"00000000-0000-0000-0000-000000000000","Item2":0},{"Item1":"00000000-0000-0000-0000-000000000000","Item2":0}]}

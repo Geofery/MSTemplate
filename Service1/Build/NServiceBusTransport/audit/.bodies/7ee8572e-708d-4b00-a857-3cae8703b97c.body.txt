@@ -1,0 +1,1 @@
+﻿{"UserId":"d2dc1334-0dc5-40ae-92e9-cdacff41c7f4","Name":"John NewNew","Email":"johnnewnewdoe@example.com","Password":"newsecurepassword123","AddressId":"734f128a-aa3d-4c0f-80c3-97f5c1b9fb09","Street":"123 Main Street","City":"Anytown","PostalCode":"12345","OrderId":"ffa6c667-3831-4019-8ec2-84355e0a706e"}

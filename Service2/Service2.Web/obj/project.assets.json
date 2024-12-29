@@ -2309,6 +2309,9 @@
       "Service2.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SharedMessages": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Service2.Domain.dll": {}
         },
@@ -2322,7 +2325,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
-          "Service2.Domain": "1.0.0"
+          "Service2.Domain": "1.0.0",
+          "SharedMessages": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Service2.Infrastructure.dll": {}
@@ -6201,6 +6205,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Azure.Core >= 1.35.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.7",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
@@ -6210,6 +6215,7 @@
       "NServiceBus.Extensions.Hosting >= 3.0.0",
       "NServiceBus.MessageInterfaces >= 1.0.0",
       "NServiceBus.Newtonsoft.Json >= 4.0.0",
+      "NServiceBus.Persistence.Sql >= 8.1.0",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
       "Service2.Application >= 1.0.0",
       "Service2.Domain >= 1.0.0",
@@ -6263,17 +6269,16 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Azure.Core": {
+            "target": "Package",
+            "version": "[1.35.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.7, )"
@@ -6313,6 +6318,10 @@
           "NServiceBus.Newtonsoft.Json": {
             "target": "Package",
             "version": "[4.0.0, )"
+          },
+          "NServiceBus.Persistence.Sql": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           },
           "Pomelo.EntityFrameworkCore.MySql": {
             "target": "Package",

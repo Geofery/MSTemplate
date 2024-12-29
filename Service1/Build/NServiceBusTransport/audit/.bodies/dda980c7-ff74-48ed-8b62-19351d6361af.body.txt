@@ -1,0 +1,1 @@
+﻿{"PaymentId":"00aaf82d-171d-49ca-81a1-5bba7a7a1926","OrderId":"ffa6c667-3831-4019-8ec2-84355e0a706e","Amount":2.0}

@@ -91,7 +91,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -147,6 +151,9 @@
             "projectReferences": {
               "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj": {
                 "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Service2/Service2.Domain/Service2.Domain.csproj"
+              },
+              "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj": {
+                "projectPath": "/Users/roed/IdeaProjects/Repo/MSTemplate/Shared/NServiceBusShared/SharedMessages/SharedMessages.csproj"
               }
             }
           }
@@ -237,6 +244,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.35.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -276,6 +287,10 @@
             "NServiceBus.Newtonsoft.Json": {
               "target": "Package",
               "version": "[4.0.0, )"
+            },
+            "NServiceBus.Persistence.Sql": {
+              "target": "Package",
+              "version": "[8.1.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
