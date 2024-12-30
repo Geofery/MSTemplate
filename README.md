@@ -12,6 +12,8 @@ Make sure to add user secrets for each microservice in the .Web use this templat
    "DbPassword" : "YourPassword"
 }
 ```
+###The program will automatically create the 3 databases and all tables. 
+##Use this to create Saga Table: [Saga Table](/Create_Saga_Table.sql)
 
 # SqlServer
 
