@@ -1,0 +1,19 @@
+﻿{
+  "OrderId": "d31f1f99-9874-4f7e-ae38-ae9867891dfa",
+  "Name": "Emma",
+  "Email": "emma@example.com",
+  "Password": "newsecurepassword123",
+  "Street": "123 Main Street",
+  "City": "Many town",
+  "PostalCode": "3400",
+  "Products": [
+    {
+      "Item1": "00000000-0000-0000-0000-000000000000",
+      "Item2": 0
+    },
+    {
+      "Item1": "00000000-0000-0000-0000-000000000000",
+      "Item2": 0
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+﻿{"UserId":"fbb077af-aebe-413b-869f-5e30ba715f28","Name":"string","Email":"string","Password":"string","AddressId":"78d5b76e-8039-4eac-b564-c5ee82eb2300","Street":"string","City":"string","PostalCode":"string","OrderId":"9da997b2-6b6c-4e5a-aba5-c731b4e3475d"}

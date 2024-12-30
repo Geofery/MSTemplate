@@ -41,7 +41,7 @@ namespace Application.Handlers
 
             async Task PublishMessage(IMessageHandlerContext context, Payment payment)
             {
-                if (payment.Reason == "Processed")
+                if (payment.Status == "Processed")
                 {
                     _logger.LogInformation("Payment processed successfully. OrderId: {OrderId}, PaymentId: {PaymentId}", payment.OrderId, payment.Id);
                     await context.Publish(new PaymentProcessed

@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "cb8da8aa-f6be-4435-b3ed-b256009d5ca0",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "33a61782-39cc-44bf-bbee-b256009d5bdc",
+  "NServiceBus.ConversationId": "89d079cf-99a8-443f-a24d-b256009d5892",
+  "NServiceBus.CorrelationId": "30c9b758-256e-4c56-8756-b256009d5890",
+  "NServiceBus.ReplyToAddress": "PaymentService",
+  "NServiceBus.OriginatingMachine": "jeffreys-mbp",
+  "NServiceBus.OriginatingEndpoint": "PaymentService",
+  "$.diagnostics.originating.hostid": "76232d24ce705afa9770bf435d60b809",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "SharedMessages.PaymentFailed, SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-30 09:32:56:252086 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-30 09:32:56:326636 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-30 09:32:56:688573 Z",
+  "$.diagnostics.hostid": "76232d24ce705afa9770bf435d60b809",
+  "$.diagnostics.hostdisplayname": "jeffreys-mbp",
+  "NServiceBus.ProcessingMachine": "jeffreys-mbp",
+  "NServiceBus.ProcessingEndpoint": "PaymentService"
+}

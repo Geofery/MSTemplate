@@ -1,0 +1,23 @@
+﻿{
+  "OrderId": "9da997b2-6b6c-4e5a-aba5-c731b4e3475d",
+  "Name": "string",
+  "Email": "string",
+  "Password": "string",
+  "Street": "string",
+  "City": "string",
+  "PostalCode": "string",
+  "Products": [
+    {
+      "ProductId": "528c10cf-dd18-4b20-9cd1-b221efec6c3c",
+      "Quantity": 2,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    },
+    {
+      "ProductId": "528c10cf-dd18-4b20-9cd1-b111efec5c4c",
+      "Quantity": 1,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    }
+  ]
+}

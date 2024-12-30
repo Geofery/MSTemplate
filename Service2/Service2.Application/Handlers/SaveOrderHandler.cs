@@ -29,13 +29,7 @@ namespace Application.Handlers
 
             try
             {
-                var products = new List<Product>();
-                foreach (var product in message.Products)
-                {
-                    products.Add(new Product(product.Id, product.Quantity));
-                }
-
-                var order = new Order(message.OrderId, message.UserId, products);
+                var order = new Order(message.OrderId, message.UserId, message.Products, "In process", "Awaiting PaymentService");
                 var savedOrder = await _orderRepository.SaveOrderAsync(order);
 
                 if (savedOrder == null)
@@ -49,7 +43,7 @@ namespace Application.Handlers
                 await context.Publish(new SaveOrderCompleted
                 {
                     OrderId = savedOrder.OrderId,
-                    Products = products
+                    Products = savedOrder.Products
                 });
             }
             catch (Exception ex)

@@ -1,0 +1,7 @@
+﻿{
+  "OrderId": "bf503ae0-58a0-4b30-a089-d28849ccc812",
+  "PaymentId": "eac8c2a2-ef4a-48ce-a7ce-31c7a6da3ca5",
+  "Status": "Processed",
+  "Reason": "Sufficient funds",
+  "Amount": 259.0
+}

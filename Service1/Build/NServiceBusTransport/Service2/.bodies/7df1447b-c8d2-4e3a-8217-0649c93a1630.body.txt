@@ -1,0 +1,1 @@
+﻿{"UserId":"1687a2bd-e0cf-41f8-90ac-a5358bd67748","Name":"Charlie Black","Email":"charlieblack@example.com","Password":"passwordxyz","AddressId":"3bebacb3-b3c0-4f1c-99ea-dfbf60d94165","Street":"654 Cedar St","City":"North Haverbrook","PostalCode":"55667","OrderId":"c3e6b6f8-398b-49d3-8e17-6f535e17b89e"}

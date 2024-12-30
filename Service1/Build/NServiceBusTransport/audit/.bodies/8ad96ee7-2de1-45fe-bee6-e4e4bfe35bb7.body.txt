@@ -1,0 +1,1 @@
+﻿{"UserId":"14dcafe4-ea7e-48e2-99cb-326f3a836f0e","Name":"Ellie","Email":"ellie@example.com","Password":"newsecurepassword123","AddressId":"dc78c533-5fcc-4e7e-a041-bb91488c385d","Street":"123 Main Street","City":"Many town","PostalCode":"3400","OrderId":"9decfadb-c516-421e-9002-35a96b65a225"}

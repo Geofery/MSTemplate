@@ -1,0 +1,1 @@
+﻿{"UserId":"08b712f3-4324-441d-aefb-ccce2ed38b06","Name":"John Doe","Email":"johndoe@example.com","Password":"password123","AddressId":"caff8459-ef18-4fd2-b561-7bce1d4dc20e","Street":"123 Main St","City":"Springfield","PostalCode":"12345","OrderId":"bf503ae0-58a0-4b30-a089-d28849ccc812"}

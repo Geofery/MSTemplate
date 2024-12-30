@@ -28,7 +28,7 @@ namespace Application.Sagas
 
         public async Task Handle(PlaceOrder message, IMessageHandlerContext context)
         {
-            _logger.LogInformation("Handling PlaceOrder. OrderId: {OrderId}, Email: {Email}", message.OrderId, message.Email);
+            _logger.LogInformation("Handling PlaceOrder. OrderId: {OrderId}, Email: {Email}, Products: {Product}", message.OrderId, message.Email, message.Products);
 
             Data.OrderId = message.OrderId;
             Data.Name = message.Name;
@@ -58,6 +58,7 @@ namespace Application.Sagas
 
             try
             {
+                _logger.LogInformation("THIS IS PRODUCTS: {product}", Data.Products);
                 await context.Send(new SaveOrder
                 {
                     UserId = Data.UserId,
@@ -122,14 +123,14 @@ namespace Application.Sagas
         {
             _logger.LogInformation("SaveOrderCompleted received. OrderId: {OrderId}", Data.OrderId);
 
-            Data.ProductsConverted = message.Products;
+            Data.Products = message.Products;
 
             try
             {
                 await context.Send(new ProcessPayment
                 {
                     OrderId = Data.OrderId,
-                    Amount = CalculateOrderAmount(Data.ProductsConverted)
+                    Amount =  CalculateOrderAmount(Data.Products)
                 });
             }
             catch (Exception ex)
@@ -142,10 +143,7 @@ namespace Application.Sagas
         public async Task Handle(PaymentProcessed message, IMessageHandlerContext context)
         {
             _logger.LogInformation("PaymentProcessed received. PaymentId: {PaymentId}, OrderId: {OrderId}", message.PaymentId, Data.OrderId);
-
             Data.PaymentId = message.PaymentId;
-            _logger.LogInformation("PAYMENT PROCESSED!!!! PAYMENTID: {paymentId}", message.PaymentId);
-
             await context.Send(new UpdateOrderPaymentStatus
             {
                 OrderId = Data.OrderId,
@@ -163,11 +161,8 @@ namespace Application.Sagas
             _logger.LogWarning("PaymentFailed received. Reason: {Reason}, OrderId: {OrderId}", message.Reason, Data.OrderId);
 
             Data.PaymentId = message.PaymentId;
-            _logger.LogInformation("PAYMENT FAILED IN SAGA!!!! PAYMENTID: {paymentId}", message.PaymentId);
             try
             {
-                _logger.LogInformation("CANCEL ORDER!!!! PAYMENTID: {paymentId}, REASON {reason}", message.PaymentId, message.Reason);
-
                 await context.Send(new UpdateOrderPaymentStatus
                 {
                     OrderId = Data.OrderId,
@@ -198,16 +193,16 @@ namespace Application.Sagas
                 .ToMessage<PaymentFailed>(message => message.OrderId);
         }
 
-        private decimal CalculateOrderAmount(List<Product> products)
+        private decimal CalculateOrderAmount(ICollection<Product> products)
         {
             decimal total = 0;
             Random r = new Random();
 
             foreach (var product in products)
             {
-                total += product.Quantity * r.NextInt64(100) + 1; 
+                int randomValue = r.Next(1, 101);
+                total += product.Quantity * randomValue;
             }
-
             return total;
         }
     }

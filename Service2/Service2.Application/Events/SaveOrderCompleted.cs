@@ -6,7 +6,7 @@ namespace Application.Events
     public class SaveOrderCompleted : IEvent
     {
         public Guid OrderId { get; set; }
-        public List<Product> Products { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }
 

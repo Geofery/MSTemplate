@@ -1,0 +1,9 @@
+﻿{
+  "Name": "Ellie",
+  "Email": "ellie@example.com",
+  "Password": "newsecurepassword123",
+  "Street": "123 Main Street",
+  "City": "Many town",
+  "PostalCode": "3400",
+  "OrderId": "9decfadb-c516-421e-9002-35a96b65a225"
+}

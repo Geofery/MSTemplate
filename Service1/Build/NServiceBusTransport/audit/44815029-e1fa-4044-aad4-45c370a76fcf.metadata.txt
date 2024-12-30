@@ -1,0 +1,21 @@
+{
+  "NServiceBus.MessageId": "2e0e7d09-4928-4e16-99b4-b256009e08a9",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "c9b8ec31-d2a3-4ab0-83fc-b256009e082f",
+  "NServiceBus.ConversationId": "57d2c0a5-359b-4723-a2d7-b256009dcead",
+  "NServiceBus.CorrelationId": "42017672-fed3-42ab-939b-b256009dceab",
+  "NServiceBus.ReplyToAddress": "OrderService",
+  "NServiceBus.OriginatingMachine": "jeffreys-mbp",
+  "NServiceBus.OriginatingEndpoint": "OrderService",
+  "$.diagnostics.originating.hostid": "d309aa414acd49e0df31838774cf637a",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Application.Events.SaveOrderCompleted, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-30 09:35:23:025162 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-30 09:35:23:048227 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-30 09:35:23:162772 Z",
+  "$.diagnostics.hostid": "d309aa414acd49e0df31838774cf637a",
+  "$.diagnostics.hostdisplayname": "jeffreys-mbp",
+  "NServiceBus.ProcessingMachine": "jeffreys-mbp",
+  "NServiceBus.ProcessingEndpoint": "OrderService"
+}

@@ -1,0 +1,1 @@
+﻿{"PaymentId":"a72bbc7a-638e-4422-a8e0-07c34696b960","OrderId":"2b432cf3-e8a6-485a-a5f1-fb2755226868","Amount":194.0,"Reason":"Insufficient funds","Status":"Failed"}

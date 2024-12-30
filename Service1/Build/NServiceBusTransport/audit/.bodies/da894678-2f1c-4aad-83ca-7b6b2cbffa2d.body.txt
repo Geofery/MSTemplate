@@ -1,0 +1,23 @@
+﻿{
+  "OrderId": "a3899f79-f265-48f3-b7ba-96b8d8df419e",
+  "Name": "John Doe",
+  "Email": "johndoe@example.com",
+  "Password": "password123",
+  "Street": "123 Main St",
+  "City": "Springfield",
+  "PostalCode": "12345",
+  "Products": [
+    {
+      "ProductId": "528c10cf-dd18-4b20-9cd1-b221efec6c3c",
+      "Quantity": 2,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    },
+    {
+      "ProductId": "528c10cf-dd18-4b20-9cd1-b111efec5c4c",
+      "Quantity": 1,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    }
+  ]
+}

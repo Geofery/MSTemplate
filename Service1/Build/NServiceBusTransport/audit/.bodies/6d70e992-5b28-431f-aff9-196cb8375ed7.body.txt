@@ -1,0 +1,4 @@
+﻿{
+  "Email": "johndoe@example.com",
+  "OrderId": "0c6a92b4-5233-4484-a6f0-bc1b85b65712"
+}

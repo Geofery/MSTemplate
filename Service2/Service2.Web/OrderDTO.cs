@@ -1,4 +1,5 @@
-﻿using SharedMessages;
+﻿using Domain.Models;
+using SharedMessages;
 
 namespace Web
 {
@@ -10,6 +11,6 @@ namespace Web
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
-        public List<(Guid Ids, int Quantity)> Products { get; set; }
+        public List<ProductDTO> Products { get; set; }
     }
 }

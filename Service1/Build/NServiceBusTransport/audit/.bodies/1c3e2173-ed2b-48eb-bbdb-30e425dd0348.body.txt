@@ -1,0 +1,9 @@
+﻿{
+  "Name": "John Doe",
+  "Email": "johndoe@example.com",
+  "Password": "password123",
+  "Street": "123 Main St",
+  "City": "Springfield",
+  "PostalCode": "12345",
+  "OrderId": "bf503ae0-58a0-4b30-a089-d28849ccc812"
+}

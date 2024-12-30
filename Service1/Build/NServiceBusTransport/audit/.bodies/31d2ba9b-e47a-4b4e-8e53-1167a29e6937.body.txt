@@ -1,0 +1,7 @@
+﻿{
+  "OrderId": "c284bab9-8614-4c22-93a3-dec080096f0b",
+  "PaymentId": "affd8307-9ee0-4080-a8d7-05d0ff4f20b3",
+  "Status": "Failed",
+  "Reason": "Insufficient funds",
+  "Amount": 2.0
+}

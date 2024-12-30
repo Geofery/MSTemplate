@@ -70,6 +70,7 @@ public class OrderRepository : IOrderRepository
 
             existingOrder.PaymentId = order.PaymentId;
             existingOrder.Status = order.Status;
+            existingOrder.Amount = order.Amount;
 
             if (!string.IsNullOrEmpty(order.Reason))
             {

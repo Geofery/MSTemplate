@@ -1,0 +1,31 @@
+﻿{
+  "OrderId": "cb2fcbef-bef3-4b1e-849a-43bcb69b4871",
+  "Products": [
+    {
+      "ProductId": "08dd28a9-c2aa-4dfa-8ab9-769f0523747f",
+      "Quantity": 0,
+      "OrderId": "cb2fcbef-bef3-4b1e-849a-43bcb69b4871",
+      "Order": {
+        "OrderId": "cb2fcbef-bef3-4b1e-849a-43bcb69b4871",
+        "UserId": "fa2da4cf-6a30-4abe-891d-1108a9e74dff",
+        "PaymentId": "00000000-0000-0000-0000-000000000000",
+        "Status": null,
+        "Reason": null,
+        "Amount": 0.0
+      }
+    },
+    {
+      "ProductId": "08dd28a9-c2aa-4e4f-80fd-f15deef1740f",
+      "Quantity": 0,
+      "OrderId": "cb2fcbef-bef3-4b1e-849a-43bcb69b4871",
+      "Order": {
+        "OrderId": "cb2fcbef-bef3-4b1e-849a-43bcb69b4871",
+        "UserId": "fa2da4cf-6a30-4abe-891d-1108a9e74dff",
+        "PaymentId": "00000000-0000-0000-0000-000000000000",
+        "Status": null,
+        "Reason": null,
+        "Amount": 0.0
+      }
+    }
+  ]
+}

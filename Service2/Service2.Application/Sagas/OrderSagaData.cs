@@ -16,7 +16,6 @@ public class OrderSagaData : ContainSagaData
     public string Street { get; set; }
     public string City { get; set; }
     public string PostalCode { get; set; }
-    public List<(Guid Ids, int Quantity)> Products { get; set; }
-    public List<Product> ProductsConverted { get; set; }
+    public ICollection<Product> Products { get; set; }
 }
 

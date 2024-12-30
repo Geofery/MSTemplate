@@ -1,4 +1,5 @@
-﻿using NServiceBus;
+﻿using Domain.Models;
+using NServiceBus;
 
 namespace Application.Commands
 {
@@ -11,6 +12,6 @@ namespace Application.Commands
         public string Street { get; set; }
         public string City { get; set; }
         public string PostalCode { get; set; }
-        public List<(Guid Ids, int Quantity)> Products { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

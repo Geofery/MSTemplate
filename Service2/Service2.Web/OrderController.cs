@@ -2,6 +2,7 @@
 using Application.Commands;
 using Swashbuckle.AspNetCore.Annotations;
 using Microsoft.Extensions.Logging;
+using Domain.Models;
 
 namespace Web.Controllers
 {
@@ -46,7 +47,6 @@ namespace Web.Controllers
 
             try
             {
-                // Create and send the PlaceOrder command
                 var command = CreatePlaceOrderCommand(model);
 
                 await _messageSession.SendLocal(command).ConfigureAwait(false);
@@ -69,6 +69,12 @@ namespace Web.Controllers
         /// <returns>A PlaceOrder command.</returns>
         private static PlaceOrder CreatePlaceOrderCommand(OrderDTO model)
         {
+            var products = new List<Product>();
+            foreach (var product in model.Products)
+            {
+                products.Add(new Product(product.Id, product.Quantity));
+            }
+
             return new PlaceOrder
             {
                 OrderId = Guid.NewGuid(),
@@ -78,7 +84,7 @@ namespace Web.Controllers
                 Street = model.Street,
                 City = model.City,
                 PostalCode = model.PostalCode,
-                Products = model.Products
+                Products = products
             };
         }
     }
