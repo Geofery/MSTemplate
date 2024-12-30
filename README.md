@@ -1,5 +1,19 @@
 # Run all microservices
-```./build.sh ```
+
+Open terminal and navigate to MSTemplate For mac Users:
+```./start_mac.sh ```
+or for Windows:
+```./start_win.sh ```
+
+Make sure to add user secrets for each microservice in the .Web use this template:
+```
+{
+   "DbUsername" : "YourUserName",
+   "DbPassword" : "YourPassword"
+}
+```
+###The program will automatically create the 3 databases and all tables. 
+##Use this to create Saga Table: [Saga Table](MSTemplate/Create_Saga_Table.sql)
 
 # SqlServer
 
