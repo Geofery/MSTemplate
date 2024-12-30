@@ -1,0 +1,9 @@
+﻿{
+  "Name": "Bob White",
+  "Email": "bobwhite@example.com",
+  "Password": "passwordabc",
+  "Street": "321 Pine St",
+  "City": "Ogdenville",
+  "PostalCode": "33445",
+  "OrderId": "21df3609-acea-4499-8239-374f9011ab12"
+}

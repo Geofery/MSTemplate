@@ -1,0 +1,23 @@
+﻿{
+  "OrderId": "04141516-b925-4554-a5d0-42f06b175aa9",
+  "Name": "Alice Brown",
+  "Email": "alicebrown@example.com",
+  "Password": "password789",
+  "Street": "789 Oak St",
+  "City": "Capital City",
+  "PostalCode": "11223",
+  "Products": [
+    {
+      "ProductId": "328c10cf-dd18-4b20-9cd1-b551efec9e7f",
+      "Quantity": 4,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    },
+    {
+      "ProductId": "428c10cf-dd18-4b20-9cd1-b661efeca8f0",
+      "Quantity": 1,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    }
+  ]
+}

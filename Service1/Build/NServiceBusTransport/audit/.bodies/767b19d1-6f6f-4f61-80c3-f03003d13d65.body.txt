@@ -1,0 +1,18 @@
+﻿{
+  "UserId": "4e84ce48-3bf6-45f3-b77b-9fa6dcd2bb53",
+  "OrderId": "21df3609-acea-4499-8239-374f9011ab12",
+  "Products": [
+    {
+      "ProductId": "528c10cf-dd18-4b20-9cd1-b771efecb9f1",
+      "Quantity": 5,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    },
+    {
+      "ProductId": "628c10cf-dd18-4b20-9cd1-b881efec1a12",
+      "Quantity": 3,
+      "OrderId": "00000000-0000-0000-0000-000000000000",
+      "Order": null
+    }
+  ]
+}

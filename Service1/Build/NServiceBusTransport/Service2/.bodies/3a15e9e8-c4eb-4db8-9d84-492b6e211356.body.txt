@@ -1,0 +1,1 @@
+﻿{"UserId":"6590fe57-72dc-48b7-b5f2-286ec5ec693c","Name":"Alice Brown","Email":"alicebrown@example.com","Password":"password789","AddressId":"30672152-039e-4a2f-bedb-c006122d6dd1","Street":"789 Oak St","City":"Capital City","PostalCode":"11223","OrderId":"c4c698e2-f172-4de2-9dad-ec1b1e446347"}

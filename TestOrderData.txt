@@ -1,0 +1,105 @@
+﻿---------------------------------Order 1---------------------------------
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "password123",
+    "street": "123 Main St",
+    "city": "Springfield",
+    "postalCode": "12345",
+    "products": [
+      {
+        "id": "528c10cf-dd18-4b20-9cd1-b221efec6c3c",
+        "Quantity": 2
+      },
+      {
+        "id": "528c10cf-dd18-4b20-9cd1-b111efec5c4c",
+        "Quantity": 1
+      }
+    ]
+  }
+
+---------------------------------Order 2---------------------------------
+
+  {
+    "name": "Jane Smith",
+    "email": "janesmith@example.com",
+    "password": "password456",
+    "street": "456 Elm St",
+    "city": "Shelbyville",
+    "postalCode": "67890",
+    "products": [
+      {
+        "id": "128c10cf-dd18-4b20-9cd1-b331efec7c5d",
+        "Quantity": 3
+      },
+      {
+        "id": "228c10cf-dd18-4b20-9cd1-b441efec8d6e",
+        "Quantity": 2
+      }
+    ]
+  }
+
+---------------------------------Order 3---------------------------------
+
+  {
+    "name": "Alice Brown",
+    "email": "alicebrown@example.com",
+    "password": "password789",
+    "street": "789 Oak St",
+    "city": "Capital City",
+    "postalCode": "11223",
+    "products": [
+      {
+        "id": "328c10cf-dd18-4b20-9cd1-b551efec9e7f",
+        "Quantity": 4
+      },
+      {
+        "id": "428c10cf-dd18-4b20-9cd1-b661efeca8f0",
+        "Quantity": 1
+      }
+    ]
+  }
+
+---------------------------------Order 4---------------------------------
+
+  {
+    "name": "Bob White",
+    "email": "bobwhite@example.com",
+    "password": "passwordabc",
+    "street": "321 Pine St",
+    "city": "Ogdenville",
+    "postalCode": "33445",
+    "products": [
+      {
+        "id": "528c10cf-dd18-4b20-9cd1-b771efecb9f1",
+        "Quantity": 5
+      },
+      {
+        "id": "628c10cf-dd18-4b20-9cd1-b881efec1a12",
+        "Quantity": 3
+      }
+    ]
+  }
+
+---------------------------------Order 5---------------------------------
+
+  {
+    "name": "Charlie Black",
+    "email": "charlieblack@example.com",
+    "password": "passwordxyz",
+    "street": "654 Cedar St",
+    "city": "North Haverbrook",
+    "postalCode": "55667",
+    "products": [
+      {
+        "id": "728c10cf-dd18-4b20-9cd1-b991efec2b23",
+        "Quantity": 2
+      },
+      {
+        "id": "828c10cf-dd18-4b20-9cd1-ba12efec3c34",
+        "Quantity": 6
+      }
+    ]
+  }
+
+

@@ -1,0 +1,23 @@
+{
+  "NServiceBus.MessageId": "0feec184-b055-4067-98ab-b25600d56517",
+  "NServiceBus.MessageIntent": "Send",
+  "NServiceBus.RelatedTo": "90db8117-55d5-4e45-b4c0-b25600d564d9",
+  "NServiceBus.ConversationId": "d3d71686-0b05-438b-a15a-b25600d53345",
+  "NServiceBus.CorrelationId": "74429875-34ac-4730-94da-b25600d53343",
+  "NServiceBus.OriginatingSagaId": "667bca97-67a2-48dd-86c2-b25600d533c6",
+  "NServiceBus.OriginatingSagaType": "Application.Sagas.OrderSaga, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.ReplyToAddress": "OrderService",
+  "NServiceBus.OriginatingMachine": "jeffreys-mbp",
+  "NServiceBus.OriginatingEndpoint": "OrderService",
+  "$.diagnostics.originating.hostid": "d309aa414acd49e0df31838774cf637a",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "Application.Commands.UpdateOrderPaymentStatus, Service2.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-30 12:56:56:823920 Z",
+  "NServiceBus.ProcessingStarted": "2024-12-30 12:56:56:840648 Z",
+  "NServiceBus.ProcessingEnded": "2024-12-30 12:56:57:301806 Z",
+  "$.diagnostics.hostid": "d309aa414acd49e0df31838774cf637a",
+  "$.diagnostics.hostdisplayname": "jeffreys-mbp",
+  "NServiceBus.ProcessingMachine": "jeffreys-mbp",
+  "NServiceBus.ProcessingEndpoint": "OrderService"
+}

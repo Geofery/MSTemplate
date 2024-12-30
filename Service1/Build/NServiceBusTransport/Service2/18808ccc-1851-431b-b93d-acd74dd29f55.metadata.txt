@@ -1,0 +1,15 @@
+{
+  "NServiceBus.MessageId": "02997743-adff-418f-87eb-b25600d5636e",
+  "NServiceBus.MessageIntent": "Publish",
+  "NServiceBus.RelatedTo": "5f605dcc-9015-4db8-9042-b25600d562dc",
+  "NServiceBus.ConversationId": "d3d71686-0b05-438b-a15a-b25600d53345",
+  "NServiceBus.CorrelationId": "74429875-34ac-4730-94da-b25600d53343",
+  "NServiceBus.ReplyToAddress": "UserManagement",
+  "NServiceBus.OriginatingMachine": "jeffreys-mbp",
+  "NServiceBus.OriginatingEndpoint": "UserManagement",
+  "$.diagnostics.originating.hostid": "a6572630ef782f1f5b6d74a2027d43c1",
+  "NServiceBus.ContentType": "application\/json",
+  "NServiceBus.EnclosedMessageTypes": "SharedMessages.SignupCompleted, SharedMessages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+  "NServiceBus.Version": "9.2.3",
+  "NServiceBus.TimeSent": "2024-12-30 12:56:55:412192 Z"
+}

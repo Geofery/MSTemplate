@@ -1,0 +1,1 @@
+﻿{"UserId":"4e84ce48-3bf6-45f3-b77b-9fa6dcd2bb53","Name":"Bob White","Email":"bobwhite@example.com","Password":"passwordabc","AddressId":"2089bb67-2389-47cc-99c7-4da4ff298e9d","Street":"321 Pine St","City":"Ogdenville","PostalCode":"33445","OrderId":"21df3609-acea-4499-8239-374f9011ab12"}
