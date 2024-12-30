@@ -5,6 +5,14 @@ Open terminal and navigate to MSTemplate For mac Users:
 or for Windows:
 ```./start_win.sh ```
 
+Make sure to add user secrets for each microservice in the .Web use this template:
+```
+{
+   "DbUsername" : "YourUserName",
+   "DbPassword" : "YourPassword"
+}
+```
+
 # SqlServer
 
 To set up a SqlServer Docker container using same volume mount location as the other Docker containers described in this page, run the following command, keeping in mind that if you already have an SQL Server running on your machine, then you need to use another port number (e.g. 1439) for the Docker container:
