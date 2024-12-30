@@ -1,5 +1,9 @@
 # Run all microservices
-```./build.sh ```
+
+Open terminal and navigate to MSTemplate For mac Users:
+```./start_mac.sh ```
+or for Windows:
+```./start_win.sh ```
 
 # SqlServer
 
