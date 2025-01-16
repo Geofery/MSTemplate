@@ -25,6 +25,9 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MyPass@word" -e "MSSQL_PID=Express
 
 Now you have an SqlServer running on `localhost,1433`
 
+#Below is for future implementation...
+-------------------------------------------------------------------------------------------------------
+
 # Neo4j
 To setup a Neo4j Docker container run the following command:
 
