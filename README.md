@@ -1,3 +1,8 @@
+# Install Nuget
+```brew install nuget```
+# Nuget packages for the system.
+Use ```dotnet add package <PACKAGE_NAME> -v <VERSION>``` or use "Manage nuget packages in your IDE", to install all packages. 
+
 # Run all microservices
 
 Open terminal and navigate to MSTemplate For mac Users:
