@@ -1,20 +1,36 @@
-# Run all microservices
-
-Open terminal and navigate to MSTemplate For mac Users:
-```./start_mac.sh ```
-or for Windows:
-```./start_win.sh ```
-
-Make sure to add user secrets for each microservice in the .Web use this template:
+# Step 1. Setup User secrets
+Add user secrets for each microservice in the .Web use this template, make sure to add for all 3 microservices:
 ```
 {
    "DbUsername" : "YourUserName",
    "DbPassword" : "YourPassword"
 }
 ```
-* Use this to create Saga Table: [Saga Table](Create_Saga_table.sql)
-* The program will automatically create the 3 databases and all other tables. 
 
+# Step 2. Run program once to setup Databases. 
+Run all microservices
+This will create the databases and all tables needed. 
+
+Open terminal and navigate to MSTemplate For mac Users:
+```./start_mac.sh ```
+or for Windows: This is untested, if it dosnt work manually run each services using ```Dotnet run``` in the .Web folder
+```./start_win.sh ```
+
+# Step 3. Setup Saga table.
+* Use this to create Saga Table: [Saga Table](Create_Saga_table.sql)
+* The program will automatically create the 3 databases and all other tables.
+
+
+# Step 4. Run the Services.
+
+Open terminal and navigate to MSTemplate For mac Users:
+```./start_mac.sh ```
+or for Windows:
+```./start_win.sh ```
+
+
+#Below is for future implementation...
+-------------------------------------------------------------------------------------------------------
 # SqlServer
 
 To set up a SqlServer Docker container using same volume mount location as the other Docker containers described in this page, run the following command, keeping in mind that if you already have an SQL Server running on your machine, then you need to use another port number (e.g. 1439) for the Docker container:
@@ -24,9 +40,6 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=MyPass@word" -e "MSSQL_PID=Express
 ```
 
 Now you have an SqlServer running on `localhost,1433`
-
-#Below is for future implementation...
--------------------------------------------------------------------------------------------------------
 
 # Neo4j
 To setup a Neo4j Docker container run the following command:
