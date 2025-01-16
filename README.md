@@ -16,7 +16,7 @@ Open terminal and navigate to MSTemplate For mac Users:
 or for Windows: This is untested, if it dosnt work manually run each services using ```Dotnet run``` in the .Web folder
 ```./start_win.sh ```
 
-# Step 3. Setup Saga table.
+# Step 3. Setup Saga table in order_service Database.
 * Use this to create Saga Table: [Saga Table](Create_Saga_table.sql)
 * The program will automatically create the 3 databases and all other tables.
 
